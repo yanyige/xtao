@@ -3,6 +3,11 @@
 	padding: 0;
 }
 
+@font-face { 
+  font-family: FangZheng; 
+  src: url('兰亭黑简.TTF'); 
+} 
+
 .floatL {
 	float: left;
 }
@@ -15,7 +20,7 @@
 }
 
 #main {
-	background: url("../image/background.jpg");
+	background: url("../image/back.jpg");
 	height: 6000px;
 	background-size: cover;
 	min-width: 1024px;
@@ -50,7 +55,7 @@ nav li.active {
 nav li a{
 	text-decoration: none;
 	color: white;
-	font-family: "helvetica neue",arial,sans-serif;
+	font-family: "FangZheng",arial,sans-serif;
     font-size: 18px;
 }
 nav li:hover {
@@ -66,13 +71,19 @@ nav {
 }
 
 .intro {
-	min-height: 1000px;
+
+}
+.introImg {
+	// position: absolute;
 }
 .headerTitle {
 	width: 30%;
+	left: 0px;
+	right: 0px;
 	margin: 0 auto;
 	display: block;
-	margin-top: 300px;
+	top: 230px;
+	position: absolute;
 }
 
 .headerBall {
@@ -89,7 +100,9 @@ nav {
 }
 
 .data-space {
-	min-height: 700px;
+	min-height: 800px;
+	background-image: url('../image/2.png');
+	background-position: 0 -310px;
 }
 .data-space .word-content::before{
 	content: url("../image/wordPrefix.png");
@@ -131,7 +144,8 @@ nav {
 }
 
 .universe {
-	background-image: url('../image/track.png');
+	background-image:url('../image/track.png');
+	// background-image: url('../image/track.png'),url('../image/trackBall.png.png')url('../image/trackBall1.png.png'),url('../image/trackBall2.png.png'),url('../image/trackBall3.png.png'),url('../image/trackBall4.png.png');
 	background-size: cover;
 	min-height: 1500px;
 }
@@ -147,6 +161,8 @@ nav {
 
 .track-wrapper {
 	position: absolute;
+	min-height: 1500px;
+	width: 100%;
 }
 .trackBall {
 	position: absolute;
@@ -215,4 +231,35 @@ nav {
     -moz-osx-font-smoothing: grayscale;
     -webkit-backface-visibility: hidden;
     text-align: justify;
+}
+
+#trackBall {
+	background-image: url("../image/trackBall.png");
+	background-repeat: no-repeat;
+	background-position: 200px 730px;
+}
+#trackBall1 {
+	background-image: url("../image/trackBall1.png");
+	background-repeat: no-repeat;
+	background-position: 350px 885px;
+}
+#trackBall2 {
+	background-image: url("../image/trackBall2.png");
+	background-repeat: no-repeat;
+	background-position: 600px 920px;
+}
+#trackBall3 {
+	background-image: url("../image/trackBall3.png");
+	background-repeat: no-repeat;
+	background-position: 950px 870px;
+}
+#trackBall4 {
+	background-image: url("../image/trackBall4.png");
+	background-repeat: no-repeat;
+	background-position: 1500px 730px;
+}
+#trackBall5 {
+	background-image: url("../image/trackBall5.png");
+	background-repeat: no-repeat;
+	background-position: 1450px 530px;
 }
