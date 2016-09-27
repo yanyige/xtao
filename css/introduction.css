@@ -1,0 +1,17 @@
+#introduction nav{
+	background-color: black;
+}
+
+.heeader {
+	font-size: 0;
+}
+
+.header img {
+	width: 100%;
+	font-size: 0;
+}
+
+.tab {
+	height: 60px;
+	background-color: #2f2f2f;
+}
