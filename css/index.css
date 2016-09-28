@@ -6,13 +6,6 @@ nav {
 	float: left;
 }
 
-
-.clearfix::after {
-	content: "";
-	display: table;
-	clear: both;
-}
-
 #main {
 	background: url("../image/back.jpg");
 	height: 6000px;

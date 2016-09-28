@@ -3,6 +3,12 @@
 	padding: 0;
 }
 
+.clearfix::after {
+	content: "";
+	display: table;
+	clear: both;
+}
+
 @font-face { 
   font-family: FangZheng; 
   src: url('兰亭黑简.TTF'); 
@@ -99,4 +105,96 @@ nav {
 
 body {
 	overflow: visible;
+}
+
+.heeader {
+	font-size: 0;
+}
+
+.header img {
+	width: 100%;
+	vertical-align: top;
+}
+
+.sec nav {
+	background-color: black;
+	position: fixed;
+}
+
+.footer {
+	// height: 300px;
+	background-color: #2f2f2f;
+	border: 1px solid transparent;
+	padding: 0 0 40px 0;
+}
+
+.footer-wrapper {
+	width: 1000px;
+	margin: 40px auto;
+	border-bottom: 1px solid #4a4a4a;
+}
+
+.footer-wrapper>.left-block {
+	width: 140px;
+	display: inline-block;
+	padding: 0 0 50px 0;
+}
+
+.footer-wrapper>.left-block ul{
+	list-style: none;
+	color: white;
+	font-family: Microsoft YaHei;
+}
+
+.footer-wrapper>.left-block ul li{
+	margin: 15px 0;
+}
+
+.footer-wrapper>.left-block ul li:first-child {
+	font-size: 20px;
+}
+
+.right-block {
+	width: 240px;
+	float: right;
+	color: white;
+	// font-family: Microsoft YaHei;
+}
+
+.right-block>ul{
+	list-style: none;
+}
+
+.right-block>ul li:first-child{
+	font-size: 40px;
+}
+
+.footer-wrapper>.right-block ul li{
+	margin: 10px 0 15px 0;
+}
+
+.online-service {
+	width: 150px;
+	// border: 1px solid #4a79bb;
+	border-radius: 200px 200px 200px 200px;
+	background: linear-gradient( to bottom, #01578b, #023c60); 
+	height: 25px;
+	text-align: center;
+	font-family: Microsoft YaHei;
+	cursor: pointer;
+}
+
+.online-service p{
+	line-height: 25px;
+}
+
+.footer-container {
+	width: 1000px;
+	margin: 0 auto;
+	color: white;
+	font-family: Microsoft YaHei;
+}
+
+.footer-container p {
+	margin: 5px 0;
 }

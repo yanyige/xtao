@@ -6,8 +6,8 @@ $(document).ready(function(){
 	            //get the pos of the dom
 	            var pageX = event.pageX;
 	            var pageY = event.clientY;
-	            var posX = pageX * 0.009;
-	            var posY = pageY * 0.009;
+	            var posX = pageX * 0.01;
+	            var posY = pageY * 0.01;
 	            var ret = 'translate3D(' + posX + 'px, ' + posY + 'px, 0px)';
                 $('.ball').css('transform', ret);
 	            $('.cloud').css('transform', ret);
