@@ -1,0 +1,30 @@
+.body {
+	padding: 40px 0 0px 0;
+}
+.body-container {
+	width: 1000px;
+	margin: 0 auto;
+	text-align: center;
+}
+.block {
+	display: inline-block;
+	width: 24%;
+	background-color: skyblue;
+	margin-bottom: 20px;
+}
+
+.block img {
+	margin-top: 40px;
+}
+
+.block h2 {
+    font-family: Microsoft YaHei;
+    width: 80%;
+    margin: 10px auto;
+}
+
+.block p {
+    font-family: Microsoft YaHei;
+    width: 80%;
+    margin: 20px auto;
+}
