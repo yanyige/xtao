@@ -28,3 +28,8 @@
     width: 80%;
     margin: 20px auto;
 }
+
+.ft-img img{
+	vertical-align: middle;
+	width: 100%;
+}
