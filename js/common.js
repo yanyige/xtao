@@ -31,8 +31,10 @@ $(document).ready(function(){
                     right: "0"
                 }, 1000, function() {
                 });
+                // var right = "27%";
+                right = $('.sub-nav').width() - ((document.documentElement.clientWidth >> 1) - ($('.nav-wrapper').width() >> 1)) - 100 + "px";
                 $(".menu-icon").stop().animate({
-                    right: "260"
+                    right: right
                 }, 1000, function() {
                 });
             }

@@ -20,6 +20,7 @@ $(document).ready(function(){
             display($('.data-space'));
             display($('.data-analytic'));
             display($('.universe'));
+            showMore();
         });
 	}
 	$.myScroll();
@@ -36,10 +37,24 @@ $(document).ready(function(){
         }else {
             dom.find('p').stop().fadeOut('fast');
         }
-        if(scrollTop > dom.find('.more').offset().top + 100) {
-            $('.more').stop().fadeIn('slow');
+    }
+
+    function showMore() {
+        var scrollTop = (document.body.scrollTop || document.documentElement.scrollTop) + document.documentElement.clientHeight;
+        if(scrollTop > $('.more').eq(0).offset().top + 30) {
+            $('.more').eq(0).stop().fadeIn('slow');
         }else {
-            $('.more').stop().fadeOut('fast');
+            $('.more').eq(0).stop().fadeOut('fast');
+        }
+        if(scrollTop > $('.more').eq(1).offset().top + 30) {
+            $('.more').eq(1).stop().fadeIn('slow');
+        }else {
+            $('.more').eq(1).stop().fadeOut('fast');
+        }
+        if(scrollTop > $('.more').eq(2).offset().top + 30) {
+            $('.more').eq(2).stop().fadeIn('slow');
+        }else {
+            $('.more').eq(2).stop().fadeOut('fast');
         }
     }
 
@@ -66,7 +81,7 @@ $(document).ready(function(){
 
 	jQuery.sportsBall = function(){
          //定义画布宽高和生成点的个数
-        var WIDTH = document.documentElement.clientWidth, HEIGHT = 6000, POINT = 35;
+        var WIDTH = document.documentElement.clientWidth, HEIGHT = $("#main").height() , POINT = 35;
         
         var canvas = document.getElementById('canvas');
         canvas.width = WIDTH,

@@ -8,7 +8,7 @@ nav {
 
 #main {
 	background: url("../image/back.jpg");
-	height: 6000px;
+	height: 5600px;
 	background-size: cover;
 	min-width: 1024px;
 	position: relative;
@@ -67,9 +67,14 @@ nav {
 	position: relative;
 }
 .data-space .word-content::before{
-	content: url("../image/wordPrefix.png");
+	content: '';
+	background: url("../image/wordPrefix.png");
+	background-size:70px 33px;
+	width: 70px;
+	height: 33px;
 	position: absolute;
 	margin-left: -100px;
+	z-index: 4;
 }
 .data-space .word-content{
 	color: white;
@@ -136,6 +141,7 @@ nav {
 }
 
 .data-analytic {
+	border: 1px solid transparent;
 	min-height: 1300px;
 	position: relative;
 	background-image: url("../image/黑洞.png");
@@ -143,7 +149,11 @@ nav {
 	background-repeat: no-repeat;
 }
 .data-analytic .word-content::before{
-	content: url("../image/wordPrefix.png");
+	content: "";
+	background: url("../image/wordPrefix.png");
+	background-size:70px 33px;
+	width: 70px;
+	height: 33px;
 	position: absolute;
 	margin-left: -100px;
 }
@@ -206,14 +216,23 @@ nav {
 }
 
 .universe .word-content::before{
-	content: url("../image/wordPrefix.png");
+	content: '';
+	background: url("../image/wordPrefix.png");
+	background-size:70px 33px;
+	width: 70px;
+	height: 33px;
 	position: absolute;
 	margin-left: -100px;
 }
 
 .ground {
+	// width: 100%;
 	font-size: 0px;
-	position: absolute;
+	// position: absolute;
+}
+
+.ground-img {
+	width: 100%;
 }
 
 .logo-bot {
@@ -224,3 +243,83 @@ nav {
 	position: absolute;
 }
 
+@media screen and (max-width: 1400px) {
+    #main {
+    	height: 5300px;
+    }
+    .cloud {
+    	width: 60%;
+    }
+    .data-space {
+	    background-size: 620px;
+    }
+    .data-space .word-content {
+	    max-width: 543px;
+	}
+    .data-space .word-content::before {
+		background-size:50px 20px;
+		width: 50px;
+		height: 20px;
+		margin-left: -80px;
+		z-index: 4;
+	}
+	.data-space .word-content h2 {
+    	line-height: 0.9;
+	    font-size: 1.62rem;
+	}
+	.more {
+	    width: 100px;
+	}
+	#half-ball>img {
+	    margin-left: -100px;
+	    margin-top: -200px;
+	    width: 100%;
+	}
+	#track {
+		background-size: 75%;
+		background-position-x: 380px;
+	}
+	.track-wrapper {
+	    position: absolute;
+	    min-height: 1000px;
+	    width: 100%;
+	    z-index: 2;
+	}
+	.universe .word-content {
+	    max-width: 543px;
+	}
+	.universe .word-content::before {
+		background-size:50px 20px;
+		width: 50px;
+		height: 20px;
+		margin-left: -80px;
+		z-index: 4;
+	}
+	.universe .word-content h2 {
+    	line-height: 0.9;
+	    font-size: 1.62rem;
+	}
+
+	.data-analytic .word-content {
+	    max-width: 543px;
+	}
+	.data-analytic .word-content::before {
+		background-size:50px 20px;
+		width: 50px;
+		height: 20px;
+		margin-left: -80px;
+		z-index: 4;
+	}
+	.data-analytic .word-content h2 {
+    	line-height: 0.9;
+	    font-size: 1.62rem;
+	}
+	.headerBall {
+	    position: absolute;
+	    margin-top: -380px;
+	    width: 30%;
+	}
+	.headerBall2 {
+		width: 5%;
+	}
+}
