@@ -8,7 +8,7 @@ nav {
 
 #main {
 	background: url("../image/back.jpg");
-	height: 5600px;
+	// height: 5600px;
 	background-size: cover;
 	min-width: 1024px;
 	position: relative;
@@ -88,14 +88,14 @@ nav {
 .data-space .word-content h2{
     line-height: 1;
     margin: 0;
-    font-family: "Source Sans Pro", sans-serif;
+    font-family: "FangZheng",arial,sans-serif;
     text-transform: uppercase;
-    font-weight: 600;
     margin-bottom: 25px;
     font-size: 2.1428571429rem;
+    font-weight: normal;
 }
 .data-space .word-content p{
-    font-family: "Source Sans Pro", sans-serif;
+    font-family: "FangZheng",arial,sans-serif;
     -ms-text-size-adjust: 100%;
     -webkit-text-size-adjust: 100%;
     min-height: 100%;
@@ -117,10 +117,12 @@ nav {
 
 .more {
 	margin-top: 30px;
+    position: relative;
+    z-index: 6;
 }
 
 .universe {
-	min-height: 800px;
+	min-height: 1050px;
 	position: relative;
 }
 
@@ -165,17 +167,17 @@ nav {
 	left: -9%;
 }
 
-.word-content h2{
+.data-analytic .word-content h2{
     line-height: 1;
     margin: 0;
-    font-family: "Source Sans Pro", sans-serif;
+    font-family: "FangZheng",arial,sans-serif;
     text-transform: uppercase;
-    font-weight: 600;
     margin-bottom: 25px;
     font-size: 2.1428571429rem;
+    font-weight: normal;
 }
-.word-content p{
-    font-family: "Source Sans Pro", sans-serif;
+.data-analytic .word-content p{
+    font-family: "FangZheng",arial,sans-serif;
     -ms-text-size-adjust: 100%;
     -webkit-text-size-adjust: 100%;
     min-height: 100%;
@@ -212,7 +214,7 @@ nav {
     position: absolute;
     left: 37%;
     margin-top: 200px;
-    z-index: 3;
+    // z-index: 3;
 }
 
 .universe .word-content::before{
@@ -223,6 +225,29 @@ nav {
 	height: 33px;
 	position: absolute;
 	margin-left: -100px;
+}
+
+.universe .word-content h2{
+    line-height: 1;
+    margin: 0;
+    font-family: "FangZheng",arial,sans-serif;
+    text-transform: uppercase;
+    margin-bottom: 25px;
+    font-size: 2.1428571429rem;
+    font-weight: normal;
+}
+.universe .word-content p{
+    font-family: "FangZheng",arial,sans-serif;
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+    min-height: 100%;
+    font-size: 14px;
+    line-height: 24px;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-backface-visibility: hidden;
+    text-align: justify;
 }
 
 .ground {
@@ -243,9 +268,14 @@ nav {
 	position: absolute;
 }
 
+.sub-nav-contain a {
+    color: #ababab;
+    text-decoration: none;
+}
+
 @media screen and (max-width: 1400px) {
     #main {
-    	height: 5300px;
+    	// height: 5300px;
     }
     .cloud {
     	width: 60%;
@@ -322,4 +352,95 @@ nav {
 	.headerBall2 {
 		width: 5%;
 	}
+    .universe {
+    	min-height: 800px;
+    }
 }
+
+@media screen and (max-width: 1024px) {
+	#main {
+		min-width: 0px;
+	}
+	.introImg {
+		position: relative;
+		top: 40px;
+		left: -20px;
+		width: 150%;
+	}
+	.headerTitle {
+		top: 140px;
+	}
+	.spark {
+	    margin-top: -340px;
+	}
+	.cloud {
+	    left: -100px;
+	    margin-top: 100px;
+	}
+	.data-space {
+		background-position-x: 200px;
+	    background-size: 320px;
+	    min-height: 400px;
+	}
+	.data-space .word-content {
+	    max-width: 300px;
+	    top: 0;
+	    left: 10%;
+	}
+	.data-space .word-content h2 {
+	    font-size: 1.22rem;
+	}
+	.universe {
+	    min-height: 600px;
+	}
+	.universe .word-content {
+	    max-width: 300px;
+	    left: 10%;
+	}
+	.universe .word-content h2 {
+	    font-size: 1.22rem;
+	}
+	.data-analytic {
+		min-height: 800px;
+	    background-size: 200%;
+	    background-position-x: 43%;
+	}
+	.data-analytic .word-content {
+	    max-width: 300px;
+	    left: 10%;
+        margin: 200px 0 0;
+	}
+	.data-analytic .word-content h2 {
+	    font-size: 1.22rem;
+	}
+}
+
+.cube { 
+   -webkit-transform: translateZ(0); 
+   -moz-transform: translateZ(0); 
+   -ms-transform: translateZ(0); 
+   -o-transform: translateZ(0); 
+   transform: translateZ(0); 
+   /* Other transform properties here */ 
+} 
+
+.cube { 
+   -webkit-backface-visibility: hidden; 
+   -moz-backface-visibility: hidden; 
+   -ms-backface-visibility: hidden; 
+   backface-visibility: hidden; 
+  
+   -webkit-perspective: 1000; 
+   -moz-perspective: 1000; 
+   -ms-perspective: 1000; 
+   perspective: 1000; 
+   /* Other transform properties here */ 
+} 
+
+.cube { 
+   -webkit-transform: translate3d(0, 0, 0); 
+   -moz-transform: translate3d(0, 0, 0); 
+   -ms-transform: translate3d(0, 0, 0); 
+   transform: translate3d(0, 0, 0); 
+  /* Other transform properties here */ 
+} 

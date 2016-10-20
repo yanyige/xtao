@@ -1,7 +1,7 @@
 .wrapper {
 	width: 1000px;
 	font-family: Microsoft YaHei;
-	margin: 100px auto;
+	margin: 15px auto;
 }
 
 .wrapper .block {
@@ -29,6 +29,7 @@
 	float: left;
 	left: 40px;
 	font-size: 20px;
+	color: black;
 }
 
 .wrapper .block:nth-child(even) {
@@ -59,3 +60,15 @@
 	margin: 20px auto;
 }
 
+@media screen and (max-width: 1024px) {
+	.wrapper {
+		width: 100%;
+	}
+	.wrapper .block {
+	    width: 100%;
+	    text-align: center;
+	}
+	.support {
+		width: 100%;
+	}
+}

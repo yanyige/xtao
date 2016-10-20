@@ -90,6 +90,11 @@ nav {
 	padding: 0 0 20px 0;
 }
 
+.sub-nav ul a {
+	text-decoration: none;
+	color: #ababab;
+}
+
 .sub-nav li:first-child {
     color: #ababab;
     font-size: 20px;
@@ -200,8 +205,41 @@ body {
 	margin: 5px 0;
 }
 
+.sec>.header {
+	overflow: hidden;
+	max-height: 890px;
+}
+
+.sec>.header>img {
+	// heigh
+}
+
 @media screen and (max-width: 1400px) {
     nav li a {
     	font-size: 16px;
     }
+    .sec>.header {
+		max-height: 580px;
+	}
+}
+@media screen and (max-width: 1024px) {
+	.nav-wrapper>img{
+		width: 20%;
+	}
+	.menu-icon {
+	    top: 6px;
+	    right: -3px;
+	}
+	nav ul {
+		display: none;
+	}
+	.sub-nav {
+		width: 200px;
+	}
+	.sub-nav-contain {
+	    margin-top: 70px;
+	}
+	.footer-container {
+		width: 100%;
+	}
 }

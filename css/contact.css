@@ -18,3 +18,13 @@
 .wrapper .block p{
 	color: #aaa;
 }
+
+@media screen and (max-width: 1024px) {
+	.wrapper {
+		width: 100%;
+	}
+	.wrapper .block {
+		width: 100%;
+		margin: 20px 0;
+	}
+}

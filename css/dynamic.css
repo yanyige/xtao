@@ -1,11 +1,15 @@
 .news-wrapper {
-	width: 1000px;
-	margin: 100px auto;
+	margin: 0 0;
 }
 
 .news-block {
 	font-family: Microsoft YaHei;
 	position: relative;
+}
+
+.news-body {
+	width: 1000px;
+	margin: 0 auto;
 }
 
 .news-block img{
@@ -28,13 +32,39 @@
 	height: 28px;
 	width: 200px;
 	position: absolute;
-	top: 190px;
+	bottom: 40px;
 	border-radius: 200px 200px 200px 200px;
 	color: #4a79bb;
 	text-align: center;
 	line-height: 28px;
 }
 
-.news-block:nth-child(n + 2) {
-	margin-top: 100px;
+.news-block:nth-child(n + 1) {
+	padding: 40px 0;
+}
+
+.news-block:nth-child(even) {
+	background-color: #f8f8f8;
+}
+
+@media screen and (max-width: 1024px) {
+    .news-body {
+	    width: 100%;
+	}
+	.news-block img {
+	    width: 100%;
+	}
+	.news-container {
+		width: 100%;
+		margin: 0;
+		text-align: center;
+	}
+	.more-btn {
+		bottom: 0px;
+		width: 80%;
+		left: 0;
+		right: 0;
+		margin: 0 auto;
+		position: absolute;
+	}
 }

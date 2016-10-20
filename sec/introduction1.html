@@ -2,9 +2,11 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
 	<title>产品介绍</title>
 	<link rel="stylesheet" type="text/css" href="../css/reset.css">
 	<link rel="stylesheet" href="../css/introduction1.css">
+	<link rel="stylesheet" href="../css/swiper.min.css">
 	<script type="text/javascript" src="../js/jquery-3.1.1.min.js"></script>
 	<script type="text/javascript" src="../js/jquery.easing.1.3.min.js"></script>
 	<script type="text/javascript" src="../js/common.js"></script>
@@ -12,6 +14,9 @@
 </head>
 <body>
 	<div id="introduction" class="sec">
+		<div id="wrapper" style="position: absolute; top: 0px; z-index: 5">
+	        <canvas id="canvas"></canvas>
+	    </div>
 		<header class="clearfix">
 			<nav class="nav">
 				<div class="nav-wrapper clearfix">
@@ -32,26 +37,34 @@
 				</div>
 			</nav>
 		</header>
-		<section class="header"><img src="../image/sec/introduction_logo.png"></section>
+		<div class="swiper-container header">
+	        <div class="swiper-wrapper">
+	            <div class="swiper-slide"><img src="../image/sec/introduction_logo.png"></div>
+	            <div class="swiper-slide"><img src="../image/sec/introduction_logo2.png"></div>
+	            <div class="swiper-slide"><img src="../image/sec/introduction_logo3.png"></div>
+	        </div>
+	        <!-- Add Pagination -->
+	    </div>
+        <div class="swiper-pagination"></div>
 		<section class="body">
 			<div class="body-container">
-				<div class="block"><img src="../image/sec/data.png"><h2>弹性横向扩展</h2><p>实时分析是直接内置到Qumudo可扩展文件系统（QSFS）使你的数据占用空间时的答案</p></div>
-				<div class="block"><img src="../image/sec/application.png"><h2>稳定可靠</h2><p>实时分析是直接内置到Qumudo可扩展文件系统（QSFS）使你的数据占用空间时的答案</p></div>
-				<div class="block"><img src="../image/sec/stable.png"><h2>高性能</h2><p>实时分析是直接内置到Qumudo可扩展文件系统（QSFS）使你的数据占用空间时的答案</p></div>
-				<div class="block"><img src="../image/sec/X5.png"><h2>应用融合</h2><p>实时分析是直接内置到Qumudo可扩展文件系统（QSFS）使你的数据占用空间时的答案</p></div>
-				<div class="block"><img src="../image/sec/fexible.png"><h2>数据资源调度</h2><p>实时分析是直接内置到Qumudo可扩展文件系统（QSFS）使你的数据占用空间时的答案</p></div>
-				<div class="block"><img src="../image/sec/C2.png"><h2>数据发现</h2><p>实时分析是直接内置到Qumudo可扩展文件系统（QSFS）使你的数据占用空间时的答案</p></div>
-				<div class="block"><img src="../image/sec/C4.png"><h2>数据管理</h2><p>实时分析是直接内置到Qumudo可扩展文件系统（QSFS）使你的数据占用空间时的答案</p></div>
-				<div class="block">
-					<img src="../image/sec/C5.png"><h2>数据特征分析</h2><p>实时分析是直接内置到Qumudo可扩展文件系统（QSFS）使你的数据占用空间时的答案</p>
-				</div>
+				<a href="../thi/moreInfo.html"><div class="block"><img src="../image/sec/data.png"><h2>弹性横向扩展</h2><!-- <p>实时分析是直接内置到Qumudo可扩展文件系统（QSFS）使你的数据占用空间时的答案</p> --></div></a>
+				<a href="../thi/moreInfo.html"><div class="block"><img src="../image/sec/application.png"><h2>稳定可靠</h2><!-- <p>实时分析是直接内置到Qumudo可扩展文件系统（QSFS）使你的数据占用空间时的答案</p> --></div></a>
+				<a href="../thi/moreInfo.html"><div class="block"><img src="../image/sec/stable.png"><h2>高性能</h2><!-- <p>实时分析是直接内置到Qumudo可扩展文件系统（QSFS）使你的数据占用空间时的答案</p> --></div></a>
+				<a href="../thi/moreInfo.html"><div class="block"><img src="../image/sec/X5.png"><h2>应用融合</h2><!-- <p>实时分析是直接内置到Qumudo可扩展文件系统（QSFS）使你的数据占用空间时的答案</p> --></div></a>
+				<a href="../thi/moreInfo.html"><div class="block"><img src="../image/sec/fexible.png"><h2>数据资源调度</h2><!-- <p>实时分析是直接内置到Qumudo可扩展文件系统（QSFS）使你的数据占用空间时的答案</p> --></div></a>
+				<a href="../thi/moreInfo.html"><div class="block"><img src="../image/sec/C2.png"><h2>数据发现</h2><!-- <p>实时分析是直接内置到Qumudo可扩展文件系统（QSFS）使你的数据占用空间时的答案</p> --></div></a>
+				<a href="../thi/moreInfo.html"><div class="block"><img src="../image/sec/C4.png"><h2>数据管理</h2><!-- <p>实时分析是直接内置到Qumudo可扩展文件系统（QSFS）使你的数据占用空间时的答案</p> --></div></a>
+				<a href="../thi/moreInfo.html"><div class="block">
+					<img src="../image/sec/C5.png"><h2>数据特征分析</h2><!-- <p>实时分析是直接内置到Qumudo可扩展文件系统（QSFS）使你的数据占用空间时的答案</p> -->
+				</div></a>
 			</div>
 		</section>
 		<section class="ft-img">
 			<img src="../image/sec/xtao-product-demo.jpg">
 		</section>
 		<section class="footer">
-			<div class="footer-wrapper">
+			<!-- <div class="footer-wrapper">
 				<div class="left-block">
 					<ul>
 						<li>订单服务</li>
@@ -102,9 +115,9 @@
 						</div></li>
 					</ul>
 				</div>
-			</div>
+			</div> -->
 			<div class="footer-container">
-				<p>Copyright © 2016, X.tao Co., Ltd. All Rights Reserved. 北京极道科技有限公司</p>
+				<p>Copyright © 2016, Xtao Co., Ltd. All Rights Reserved. 极道科技（北京）有限公司</p>
 				<p>京ICP备14506080号</p>
 			</div>
 		</section>
@@ -112,28 +125,31 @@
 	<div class="sub-nav">
 		<div class="sub-nav-contain">
 			<ul>
-				<li>产品介绍</li>
+				<li><a href="../index.html">首页</a></li>
+			</ul>
+			<ul>
+				<li><a href="introduction1.html">产品介绍</a></li>
 				<li>我是一个产品</li>
 				<li>我是一个产品</li>
 			</ul>
 			<ul>
-				<li>关于极道</li>
+				<li><a href="about.html">关于极道</a></li>
 				<li>我是一个关于</li>
 				<li>我是一个关于</li>
 			</ul>
 			<ul>
-				<li>公司动态</li>
+				<li><a href="dynamic.html">公司动态</a></li>
 				<li>我是一个动态</li>
 				<li>我是一个动态</li>
 				<li>我是一个动态</li>
 			</ul>
 			<ul>
-				<li>产品介绍</li>
+				<li><a href="hire.html">招聘信息</a></li>
 				<li>我是一个产品</li>
 				<li>我是一个产品</li>
 			</ul>
 			<ul>
-				<li>关于极道</li>
+				<li><a href="contact.html">联系我们</a></li>
 				<li>我是一个关于</li>
 				<li>我是一个关于</li>
 			</ul>
@@ -144,6 +160,17 @@
 				<li>我是一个动态</li>
 			</ul>
 		</div>
-	</div>	
+	</div>		
 </body>
+<script src="../js/swiper.jquery.min.js"></script>
+<script>
+    var swiper = new Swiper('.swiper-container', {
+        pagination: '.swiper-pagination',
+        paginationClickable: true,
+        autoplay: 2500,
+        paginationClickable: true,
+		autoplayDisableOnInteraction: false,
+		centeredSlides: true,
+    });
+</script>	
 </html>

@@ -1,20 +1,32 @@
 .body {
 	padding: 40px 0 0px 0;
+	position: relative;
+	z-index: 6;
+    background: #f8f8f8;
 }
 .body-container {
-	width: 1000px;
+	width: 1100px;
 	margin: 0 auto;
 	text-align: center;
 }
+
 .block {
-	display: inline-block;
 	width: 24%;
-	background-color: skyblue;
+	display: inline-block;
+	transition:all 0.3s linear;
+	background:#70dbff;
 	margin-bottom: 20px;
+	cursor: pointer;
+	color: #303030;
+	padding: 40px 0 30px 0;
+}
+
+.block:hover {
+	background: rgb(33, 188, 239);
 }
 
 .block img {
-	margin-top: 40px;
+	// margin-top: 40px;
 }
 
 .block h2 {
@@ -32,4 +44,53 @@
 .ft-img img{
 	vertical-align: middle;
 	width: 100%;
+}
+
+.swiper-pagination {
+    position: absolute;
+    text-align: center;
+    -webkit-transition: .3s;
+    -moz-transition: .3s;
+    -o-transition: .3s;
+    transition: .3s;
+    -webkit-transform: translate3d(0,0,0);
+    -ms-transform: translate3d(0,0,0);
+    -o-transform: translate3d(0,0,0);
+    transform: translate3d(0,0,0);
+    z-index: 10;
+
+
+    left: 0;
+    width: 100%;
+}
+
+.swiper-pagination .swiper-pagination-bullet {
+    margin: 0 5px;
+}
+.swiper-pagination-clickable .swiper-pagination-bullet {
+    cursor: pointer;
+}
+.swiper-pagination-bullet-active {
+    opacity: 1;
+    background: #007aff;
+}
+.swiper-pagination-bullet {
+    width: 8px;
+    height: 8px;
+    display: inline-block;
+    border-radius: 100%;
+    background: #000;
+    opacity: .2;
+}
+
+@media screen and (max-width: 1024px) {
+    .block {
+        width: 80%;
+        padding: 0;
+    }
+    .body-container {
+        width: 100%;
+        margin: 0 auto;
+        text-align: center;
+    }
 }

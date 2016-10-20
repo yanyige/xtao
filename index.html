@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
 	<title>XtaoIndex</title>
 	<link rel="stylesheet" type="text/css" href="css/reset.css">
 	<link rel="stylesheet" href="css/index.css">
@@ -37,6 +38,9 @@
 			<img class="headerBall ball" src="image/图1球1.png">
 			<!-- <img class="headerBall3" src="image/图1球2.png"> -->
 			<img class="headerBall2 ball" src="image/图1球3.png">
+			<div id="wrapper" style="position: absolute; top: 0px; z-index: 5">
+		        <canvas id="canvas"></canvas>
+		    </div>
 		</section>
 		<section class="data-space">
 			<img class="spark" src="image/2-3.png">
@@ -45,7 +49,7 @@
 				<div class="main-content">
 					<p>想填满极道的数据空间，除非你拥有整个宇宙。无数天体诞生、星系远离造就了不断膨胀的宇宙空间。神秘的宇宙，广袤无垠，经常勾起我们对宇宙空间的无限遐思和向往。而今天海量数据增长的需求，唤醒了极道对极致数据空间的渴求。像宇宙空间一样，能够不断的弹性膨胀，稳定而高速的全局数据存储空间以及容纳EB级的数据。</p>
 				</div>
-				<img src="image/more.png" class="more">
+				<a href="sec/introduction1.html"><img src="image/more.png" class="more"></a>
 			</div>
 			<img class= "cloud" src="image/img-cloud-1.png">
 		</section>
@@ -53,20 +57,20 @@
 			<div id="track" class="track-wrapper" data-top="100"></div>
 			<div id="half-ball"><img src="image/球.png">/</div>
 			<div class="word-content">
-				<h2>极道数据管理· DATA MANAGEMENT</h2>
+				<h2>数据管理· DATA MANAGEMENT</h2>
 				<div class="main-content">
 					<p>优美如相对论般把数据中心由混沌变为有序貌似杂乱无序的宇宙却统一于一个简单的数学公式；看似庞大轰鸣的数据中心却可以通过几次点击来征服；极道的数 据管理系统不仅能简化数据发现，还可以把海量数据按自定义元数据动态组织管理，让混沌成为一种简单美。</p>
 				</div>
-				<img src="image/more.png" class="more">
+				<a href="sec/introduction1.html"><img src="image/more.png" class="more"></a>
 			</div>
 		</section>
 		<section class="data-analytic" data-top="-100">
 			<div class="word-content">
-				<h2>极道数据分析· DATA ANALYTIC</h2>
+				<h2>数据分析· DATA ANALYTIC</h2>
 				<div class="main-content">
 					<p>浩瀚的“数据星系”中发现下一个“生命”之所存在于太空中不计其数的天体，藏匿着诸多未知的秘密，探索“数据星系”中隐藏的奥妙，离不开“元数据”。元 数据既“数 据的数据”、也是“数据的基因“。元数据描述了“数据星系“中每个独立”天体“的丰富特征。极道的数据分析，探索数据基因中隐藏的规律，揭示更多“数据星系”的奥秘，创造更多更具独特意义的数据生命体。</p>
 				</div>
-				<img src="image/more.png" class="more">
+				<a href="sec/introduction1.html"><img src="image/more.png" class="more"></a>
 			</div>
 		</section>
 		<section class="ground">
@@ -77,28 +81,28 @@
 	<div class="sub-nav">
 		<div class="sub-nav-contain">
 			<ul>
-				<li>产品介绍</li>
+				<li><a href="sec/introduction1.html">产品介绍</a></li>
 				<li>我是一个产品</li>
 				<li>我是一个产品</li>
 			</ul>
 			<ul>
-				<li>关于极道</li>
+				<li><a href="sec/about.html">关于极道</a></li>
 				<li>我是一个关于</li>
 				<li>我是一个关于</li>
 			</ul>
 			<ul>
-				<li>公司动态</li>
+				<li><a href="sec/dynamic.html">公司动态</a></li>
 				<li>我是一个动态</li>
 				<li>我是一个动态</li>
 				<li>我是一个动态</li>
 			</ul>
 			<ul>
-				<li>产品介绍</li>
+				<li><a href="sec/hire.html">招聘信息</a></li>
 				<li>我是一个产品</li>
 				<li>我是一个产品</li>
 			</ul>
 			<ul>
-				<li>关于极道</li>
+				<li><a href="sec/contact.html">联系我们</a></li>
 				<li>我是一个关于</li>
 				<li>我是一个关于</li>
 			</ul>
@@ -110,8 +114,6 @@
 			</ul>
 		</div>
 	</div>	
-	<div id="wrapper" style="position: absolute; top: 0px; z-index: 5">
-        <canvas id="canvas"></canvas>
-    </div>
+	<div class="cube"></div>
 </body>
 </html>
