@@ -258,6 +258,7 @@ nav {
 
 .ground-img {
 	width: 100%;
+	max-height: 1000px;
 }
 
 .logo-bot {
@@ -358,6 +359,9 @@ nav {
 }
 
 @media screen and (max-width: 1024px) {
+	.headerTitle {
+		width: 75%;
+	}
 	#main {
 		min-width: 0px;
 	}
@@ -368,7 +372,7 @@ nav {
 		width: 150%;
 	}
 	.headerTitle {
-		top: 140px;
+		top: 70px;
 	}
 	.spark {
 	    margin-top: -340px;
@@ -413,6 +417,9 @@ nav {
 	.data-analytic .word-content h2 {
 	    font-size: 1.22rem;
 	}
+	.logo-bot {
+    	width: 80%;
+    }
 }
 
 .cube { 

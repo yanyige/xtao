@@ -47,6 +47,14 @@
 	background-color: #f8f8f8;
 }
 
+.news-block:nth-child(even) img {
+	float: right;
+}
+
+.news-block:nth-child(even) .news-container {
+    margin: 0px 50px 25px 0;
+}
+
 @media screen and (max-width: 1024px) {
     .news-body {
 	    width: 100%;
