@@ -7,7 +7,7 @@ nav {
 }
 
 #main {
-	background: url("../image/back.jpg");
+	background: url("../image/back-tiny.jpg");
 	// height: 5600px;
 	background-size: cover;
 	min-width: 1024px;
@@ -60,7 +60,7 @@ nav {
 .data-space {
 	min-height: 1300px;
 	// overflow: hidden;
-	background-image: url('../image/图2球3-1.png');
+	background-image: url('../image/图2球3-1-tiny.png');
 	background-repeat: no-repeat;
 	background-position: right;
 	border-top: 1px solid transparent;
@@ -146,7 +146,7 @@ nav {
 	border: 1px solid transparent;
 	min-height: 1300px;
 	position: relative;
-	background-image: url("../image/黑洞.png");
+	background-image: url("../image/黑洞-tiny.png");
 	background-size: 100%;
 	background-repeat: no-repeat;
 }
@@ -162,7 +162,7 @@ nav {
 .data-analytic .word-content{
 	color: white;
 	max-width: 720px;
-	margin: 500px auto 0;
+	margin: 450px auto 0;
 	position: relative;
 	left: -9%;
 }
@@ -191,7 +191,7 @@ nav {
 }
 
 #track {
-	background-image: url("../image/组1.png");
+	background-image: url("../image/组1-tiny.png");
 	background-repeat: no-repeat;
 	background-position: 200px 730px;
 	background-size: 100%;
@@ -213,7 +213,7 @@ nav {
     margin: 0 auto;
     position: absolute;
     left: 37%;
-    margin-top: 200px;
+    margin-top: 250px;
     // z-index: 3;
 }
 
@@ -286,6 +286,7 @@ nav {
     }
     .data-space .word-content {
 	    max-width: 543px;
+	    top: 450px;
 	}
     .data-space .word-content::before {
 		background-size:50px 20px;
@@ -356,9 +357,85 @@ nav {
     .universe {
     	min-height: 800px;
     }
+    .ground-img {
+		width: 100%;
+		max-height: 750px;
+	}
 }
 
 @media screen and (max-width: 1024px) {
+	.headerTitle {
+		width: 65%;
+	}
+	#main {
+		min-width: 0px;
+	}
+	.introImg {
+		position: relative;
+		top: 40px;
+		left: -20px;
+		width: 150%;
+	}
+	.headerTitle {
+		top: 120px;
+		left: 50px;
+	}
+	.spark {
+        margin-top: -340px;
+    	margin-left: -166px;
+	}
+	.cloud {
+	    left: -100px;
+	    margin-top: -350px;
+	}
+	.data-space {
+	    background-size: 320px;
+	    min-height: 400px;
+	}
+	.data-space .word-content {
+	    max-width: 340px;
+	    top: 130px;
+	}
+	.data-space .word-content h2 {
+	    font-size: 1.22rem;
+	}
+	.universe {
+	    min-height: 600px;
+	}
+	.universe .word-content {
+	    max-width: 340px;
+        margin-top: 95px;
+	}
+	.universe .word-content h2 {
+	    font-size: 1.22rem;
+	}
+	#half-ball>img {
+	    width: 85%;
+	}
+	#track {
+		background-position-x: 55px;
+		background-size: 100%;
+	}
+	.data-analytic {
+		min-height: 800px;
+	    background-size: 150%;
+	    background-position-x: 43%;
+	}
+	.data-analytic .word-content {
+	    max-width: 340px;
+	    left: 30%;
+        margin: 200px 0 0;
+	}
+	.data-analytic .word-content h2 {
+	    font-size: 1.22rem;
+	}
+	.logo-bot {
+    	width: 80%;
+	    margin: -155px auto 0;
+    }
+}
+
+@media screen and (max-width: 450px) {
 	.headerTitle {
 		width: 75%;
 	}

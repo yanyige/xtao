@@ -60,6 +60,7 @@ nav {
 	right: -40px;
 	z-index: 8;
 	cursor: pointer;
+	display: none;
 }
 
 .menu-icon span {
@@ -229,6 +230,29 @@ body {
 	.menu-icon {
 	    top: 6px;
 	    right: -3px;
+	    display: block;
+	}
+	nav ul {
+		display: none;
+	}
+	.sub-nav {
+		width: 200px;
+	}
+	.sub-nav-contain {
+	    margin-top: 70px;
+	}
+	.footer-container {
+		width: 100%;
+	}
+}
+@media screen and (max-width: 450px) {
+	.nav-wrapper>img{
+		width: 20%;
+	}
+	.menu-icon {
+	    top: 6px;
+	    right: -3px;
+	    display: block;
 	}
 	nav ul {
 		display: none;

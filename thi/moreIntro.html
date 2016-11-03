@@ -4,16 +4,21 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
 	<title>产品介绍</title>
-	<link rel="stylesheet" type="text/css" href="css/normalize.css">
+	<link rel="stylesheet" type="text/css" href="../css/normalize.css">
 	<link rel="stylesheet" type="text/css" href="../css/reset.css">
+	<link rel="stylesheet" href="../css/introduction1.css">
+	<link rel="stylesheet" href="../css/swiper.min.css">
 	<link rel="stylesheet" href="../css/moreInfo.css">
 	<script type="text/javascript" src="../js/jquery-3.1.1.min.js"></script>
 	<script type="text/javascript" src="../js/jquery.easing.1.3.min.js"></script>
 	<script type="text/javascript" src="../js/common.js"></script>
-	<script type="text/javascript" src="../js/moreInfo.js"></script>
+	<script type="text/javascript" src="../js/introduction1.js"></script>
 </head>
 <body>
-	<div id="moreInfo" class="sec">
+	<div id="introduction" class="sec">
+		<div id="wrapper" style="position: absolute; top: 0px; z-index: 5">
+	        <canvas id="canvas"></canvas>
+	    </div>
 		<header class="clearfix">
 			<nav class="nav">
 				<div class="nav-wrapper clearfix">
@@ -34,14 +39,23 @@
 				</div>
 			</nav>
 		</header>
-		<section class="header"><img src="../image/sec/about_logo-tiny.png"></section>
+		<div class="swiper-container header">
+	        <div class="swiper-wrapper">
+	            <div class="swiper-slide"><img src="../image/sec/introduction_logo3-tiny.png"></div>
+	            <div class="swiper-slide"><img src="../image/sec/introduction_logo2-tiny.png"></div>
+	            <div class="swiper-slide"><img src="../image/sec/introduction_logo-tiny.png"></div>
+	        </div>
+	        <!-- Add Pagination -->
+	    </div>
+        <div class="swiper-pagination"></div>
 		<section class="container">
-			<h1>更多信息</h1>
-			<p>极道科技(北京)有限公司（XTAO Techmology Inc.）是一家专业的数据系统公司。极道研发，设计和生产大规模分布式智能存储系统、数据管理分析系统。</p>
-			<p>极道重新定义了”存储“的”数据感知“</p>
-			<p>“存”已经无法满足各种各样的行业应用对存储的需求，提供“空间”中存储系统的初级阶段，管理“数据”及其特征才是应用关心的本质。从存储的角度如何提供好除了“存”以外的数据服务功能，是极道科技一直追求的终极目标。</p>
-			<h2>极道重新定义了”存储“的”数据感知“</h2>
+			<h1>产品介绍三级页面</h1>
+			<p>我是三级页面</p>
+			<p>我是三级页面我是三级页面我是三级页面我是三级页面我是三级页面我是三级页面</p>
+			<p>我是三级页面我是三级页面我是三级页面我是三级页面我是三级页面我是三级页面我是三级页面</p>
+			<h2>我是三级页面我是三级页面我是三级页面我是三级页面我是三级页面</h2>
 		</section>
+
 		<section class="footer">
 			<div class="footer-container">
 				<p>Copyright © 2016, Xtao Co., Ltd. All Rights Reserved. 极道科技（北京）有限公司</p>
@@ -52,28 +66,31 @@
 	<div class="sub-nav">
 		<div class="sub-nav-contain">
 			<ul>
-				<li>产品介绍</li>
+				<li><a href="../index.html">首页</a></li>
+			</ul>
+			<ul>
+				<li><a href="introduction1.html">产品介绍</a></li>
 				<li>我是一个产品</li>
 				<li>我是一个产品</li>
 			</ul>
 			<ul>
-				<li>关于极道</li>
+				<li><a href="about.html">关于极道</a></li>
 				<li>我是一个关于</li>
 				<li>我是一个关于</li>
 			</ul>
 			<ul>
-				<li>公司动态</li>
+				<li><a href="dynamic.html">公司动态</a></li>
 				<li>我是一个动态</li>
 				<li>我是一个动态</li>
 				<li>我是一个动态</li>
 			</ul>
 			<ul>
-				<li>产品介绍</li>
+				<li><a href="hire.html">招聘信息</a></li>
 				<li>我是一个产品</li>
 				<li>我是一个产品</li>
 			</ul>
 			<ul>
-				<li>关于极道</li>
+				<li><a href="contact.html">联系我们</a></li>
 				<li>我是一个关于</li>
 				<li>我是一个关于</li>
 			</ul>
@@ -84,9 +101,18 @@
 				<li>我是一个动态</li>
 			</ul>
 		</div>
-	</div>	
-	<div id="wrapper" style="position: absolute; top: 0px; z-index: 5">
-        <canvas id="canvas"></canvas>
-    </div>
+	</div>		
 </body>
+<script src="../js/swiper.jquery.min.js"></script>
+<script>
+    var swiper = new Swiper('.swiper-container', {
+        pagination: '.swiper-pagination',
+        paginationClickable: true,
+        autoplay: 2500,
+        speed: 1000,
+        paginationClickable: true,
+		autoplayDisableOnInteraction: false,
+		centeredSlides: true,
+    });
+</script>	
 </html>

@@ -84,7 +84,11 @@ $(document).ready(function(){
 	$.slideScroll();
 
     jQuery.fitPhone = function() {
-        if($('body').width() < 1000) {
+        if($('body').width() < 1025) {
+            $('#track').attr('data-top', 0);
+            $('.data-analytic').attr('data-top', -400);
+        }
+        if($('body').width() < 450) {
             $('.ball').attr('src', '');
             $('.spark').attr('src', '');
         }
