@@ -8,7 +8,7 @@
 	<link rel="stylesheet" type="text/css" href="../css/reset.css">
 	<link rel="stylesheet" href="../css/introduction1.css">
 	<link rel="stylesheet" href="../css/swiper.min.css">
-	<link rel="stylesheet" href="../css/moreInfo.css">
+	<link rel="stylesheet" href="moreIntro.css">
 	<script type="text/javascript" src="../js/jquery-3.1.1.min.js"></script>
 	<script type="text/javascript" src="../js/jquery.easing.1.3.min.js"></script>
 	<script type="text/javascript" src="../js/common.js"></script>
@@ -49,16 +49,57 @@
 	    </div>
         <div class="swiper-pagination"></div>
 		<section class="container">
-			<h1>产品介绍三级页面</h1>
-			<p>我是三级页面</p>
-			<p>我是三级页面我是三级页面我是三级页面我是三级页面我是三级页面我是三级页面</p>
-			<p>我是三级页面我是三级页面我是三级页面我是三级页面我是三级页面我是三级页面我是三级页面</p>
-			<h2>我是三级页面我是三级页面我是三级页面我是三级页面我是三级页面</h2>
+			<div class="item clearfix" id="front-end">
+				<div class="block-left ">
+					<img src="../image/sec/data.png">
+				</div>
+				<div class="block-center">
+					<h1 class="item-name">NL系列集群存储：</h1>
+					<!-- <p class="item-time">2016.11.3</p> -->
+
+					<p>
+						NL系列近线集群文件存储系统，采用了先进的全对称分布式存储架构。在保证数据高可靠性和高可用性的同时，提供在线的横向扩展，数据可以动态的在存储集群中的各个节点中平衡，保证数据容量和IO负载的均衡。极道分布式冷存储系统在每个存储控制器上通过池将所有的磁盘聚集起来，池既是磁盘集合也是磁盘容错的最小单位。磁盘池通过RAID技术保护冷存储系统的磁盘，防止磁盘级别的损毁导致数据的丢失和不可用。 分布式文件系统将所有控制器以池为后端的存储空间以统一命名空间的形势组织起来，提供给用户一个大的、可以在线扩展的文件级别的虚拟共享空间。存储控制器之间通过高速的内部互联技术连接起来，用来做集群内部节点间数据转发的通道。所有的存储控制器都可以做为访问入口点，所以客户端可以通过任意一个存储控制器连接到极道分布式冷存系统中访问所有共享的数据，可以做到真正的IO并行和使能IO带宽随着控制器增加而线性增长。
+					</p>
+
+				</div>
+			</div>
+
+			<div class="item clearfix" id="front-end">
+				<div class="block-left ">
+					<img src="../image/sec/application.png">
+				</div>
+				<div class="block-center">
+					<h1 class="item-name">X系列数据智能存储系统：</h1>
+					<!-- <p class="item-time">2016.11.3</p> -->
+
+					<p>
+						X系列数据智能系统DIS（Data Intelligent System），是一款数据感知的智能分布式存储，是一款真正意义上的应用定义存储系统。极道数据智能存储摆脱了传统意义上的单纯提供空间的存储概念、集数据存储、数据管理和数据分析为一体，在提供对海量文件数据、对象数据存取的同时，根据默认的或者用户自定义的元数据信息感知用户数据特征和使用特征，并且根据这些数据特征和使用特征提供数据发现、使能数据动态组织、并且可以根据应用的工作流控制数据流，同时可以进一步将大量的数据特征接入大数据分析引擎，实施数据分析。极道DIS集群存储充分的收集了了生物计算、基因计算、海量文件档案等行业应用的需求，扩展了原有集群存储的概念。极道DIS集群存储的设计理念，充分的展示出，“存”已经无法满足各种各样的行业应用对存储的需求了，提供“空间”只是存储的初级阶段，“数据”及其特征才是应用真正关心的内容，从存储的角度如何提供好除了“存”以外的数据服务功能，是极道DIS系统一直追求的目标。极道DIS的元数据索引系统不但汇聚了丰富的数据特征信息，而且提供数据分析接入。应用可以按照需求接入数据分析引擎，针对集中的、丰富的元数据信息进行大数据分析。同时针对很多行业应用对数据处理的工作流概念，极道DIS使能应用自定义数据流向，根据用户定义的规则，自动的在存储系统内部流动数据，而无需存储客户端的介入，也无需消耗客户端和存储系统之间的网络带宽，充分的发挥了存储系统的能力。为了和应用更加的紧密集成，有效利用存储系统空闲的计算资源，极道DIS系统提供了一个计算卸载引擎，一部分应用的适合离数据更近的位置完成计算功能在存储系统端完成，将存储系统的计算能力发挥到极致。
+
+					</p>
+
+				</div>
+			</div>
+
+			<div class="item clearfix" id="front-end">
+				<div class="block-left ">
+					<img src="../image/sec/stable.png">
+				</div>
+				<div class="block-center">
+					<h1 class="item-name">C系列融合集群存储</h1>
+					<!-- <p class="item-time">2016.11.3</p> -->
+
+					<p>
+						OpenStack是一种广泛采用的开源云计算平台，虚拟化了计算，网络和存储等硬件资源，提供一种超大规模，灵活，可靠的企业级IT服务尤其OpenStack后端的块存储更是其承载虚拟机应用的基石。数据存储和管理是整个OpenStack环境中的重中之重，他影响了OpenStack云平台的整体表现。C系列存储系统。C系列是一款与其他云计算产品（如OpenStack）融合的集群存储产品。为OpenStack、CloudStack等云计算环境提供后端的数据块存储服务支撑。同样以分布式块存储为依托，通过内嵌的驱动程序于Openstack／Cloudstack等分布式云计算环境对接在一起，用以解决如下OpenStack云环境下面临的问题：首先在线扩展数据容量就是其中的一个巨大的挑战，在一个企业的云环境中提供一种平滑透明的横向数据扩展能力是云环境灵活性的基本需求之一。 其次，容错机制也是评价一个云环境下的存储是否满足高可用的标准。设想在一个上百节点，上万块硬盘的集群环境中，节点故障和硬盘的故障甚至机房故障已经成为常态，尽量隔离这些故障从而不影响整个环境的业务和性能也是企业级IT环境追求的目标之一。最后，全局范围内的QoS的保障也是大规模业务的条件下高效数据存储能力的表现。极道存储产品在OpenStack环境下提供了透明在线扩容，故障域管理与隔离，以及集群范围内的全局数据平衡和QoS保障。如下图描述的那样，极道存储后端提供给OpenStack智能选取存储资源池,以达到数据的全局平衡和性能最优，而故障被隔离在每个资源池内，不会影响其他资源池的性能和数据安全，以池为单位进行数据扩容，从而避免了全局的数据恢复和搬移。
+
+					</p>
+
+				</div>
+			</div>
 		</section>
 
 		<section class="footer">
 			<div class="footer-container">
-				<p>Copyright © 2016, Xtao Co., Ltd. All Rights Reserved. 极道科技（北京）有限公司</p>
+				<p>Copyright © 2016, XTAO Co., Ltd. All Rights Reserved. 极道科技（北京）有限公司</p>
 				<p>京ICP备14506080号</p>
 			</div>
 		</section>
@@ -101,7 +142,7 @@
 				<li>我是一个动态</li>
 			</ul>
 		</div>
-	</div>		
+	</div>
 </body>
 <script src="../js/swiper.jquery.min.js"></script>
 <script>
@@ -114,5 +155,5 @@
 		autoplayDisableOnInteraction: false,
 		centeredSlides: true,
     });
-</script>	
+</script>
 </html>

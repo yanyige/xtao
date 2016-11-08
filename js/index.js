@@ -64,6 +64,7 @@ $(document).ready(function(){
             t1 = t1 * 0.1;
             var posX = "50%";
             var posY = t1+$(".universe").data('top') + "px";
+
             $(".universe").stop().animate({"background-positionx":posX, "background-position-y":posY}, 3000, 'easeOutQuint');
             Array.prototype.slice.call($(".track-wrapper"), 0).forEach( function(element, index) {
                 posY = t1 + $(element).data('top') + "px";
@@ -75,6 +76,9 @@ $(document).ready(function(){
                 t1 = $(window).scrollTop() - $(".data-analytic").offset().top;
             }
             posY = t1 * 0.1 + $(".data-analytic").data('top')+ "px";
+            console.log(posY);
+            console.log($(".data-analytic"));
+            console.log($(".data-analytic").data('top'));
             $(".data-analytic").stop().animate({"background-positionx":posX, "background-position-y":posY}, 3000, 'easeOutQuint');
             t1 = $(".data-space").offset().top - $(window).scrollTop() -400;
             posY = t1 * 0.05 + "px";
@@ -86,7 +90,7 @@ $(document).ready(function(){
     jQuery.fitPhone = function() {
         if($('body').width() < 1025) {
             $('#track').attr('data-top', 0);
-            $('.data-analytic').attr('data-top', -400);
+            $('.data-analytic').attr('data-top', -100);
         }
         if($('body').width() < 450) {
             $('.ball').attr('src', '');

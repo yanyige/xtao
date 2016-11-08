@@ -9,10 +9,10 @@
 	clear: both;
 }
 
-@font-face { 
-  font-family: FangZheng; 
-  src: url('兰亭黑简.TTF'); 
-} 
+@font-face {
+  font-family: FangZheng;
+  src: url('兰亭黑简.TTF');
+}
 
 .nav-wrapper {
 	position: relative;
@@ -184,7 +184,7 @@ body {
 	width: 150px;
 	// border: 1px solid #4a79bb;
 	border-radius: 200px 200px 200px 200px;
-	background: linear-gradient( to bottom, #01578b, #023c60); 
+	background: linear-gradient( to bottom, #01578b, #023c60);
 	height: 25px;
 	text-align: center;
 	font-family: Microsoft YaHei;
@@ -228,7 +228,7 @@ body {
 		width: 20%;
 	}
 	.menu-icon {
-	    top: 6px;
+	    top: 29px;
 	    right: -3px;
 	    display: block;
 	}
@@ -243,6 +243,7 @@ body {
 	}
 	.footer-container {
 		width: 100%;
+		text-align: center;
 	}
 }
 @media screen and (max-width: 450px) {
@@ -251,8 +252,6 @@ body {
 	}
 	.menu-icon {
 	    top: 6px;
-	    right: -3px;
-	    display: block;
 	}
 	nav ul {
 		display: none;
