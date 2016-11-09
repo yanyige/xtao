@@ -1,7 +1,7 @@
 .container {
 	text-align: center;
 	font-family: "Hiragino Sans GB","Microsoft YaHei","WenQuanYi Micro Hei";
-	width: 1000px;
+	max-width: 1000px;
 	margin: 0 auto;
 }
 

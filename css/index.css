@@ -361,6 +361,9 @@ nav {
 		width: 100%;
 		max-height: 750px;
 	}
+	.logo-bot {
+		margin: -50px auto 0;
+	}
 }
 
 @media screen and (max-width: 1024px) {

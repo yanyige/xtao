@@ -76,9 +76,6 @@ $(document).ready(function(){
                 t1 = $(window).scrollTop() - $(".data-analytic").offset().top;
             }
             posY = t1 * 0.1 + $(".data-analytic").data('top')+ "px";
-            console.log(posY);
-            console.log($(".data-analytic"));
-            console.log($(".data-analytic").data('top'));
             $(".data-analytic").stop().animate({"background-positionx":posX, "background-position-y":posY}, 3000, 'easeOutQuint');
             t1 = $(".data-space").offset().top - $(window).scrollTop() -400;
             posY = t1 * 0.05 + "px";

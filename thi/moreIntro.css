@@ -40,3 +40,13 @@ body {
 .item {
 	padding: 30px 8% 30px 8%;
 }
+
+@media screen and (max-width: 450px) {
+	.item {
+		text-align: center;
+	}
+	.block-center {
+		margin-left: 0;
+		width: 100%;
+	}
+}
