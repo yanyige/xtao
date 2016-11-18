@@ -39,7 +39,7 @@ div.fsbanner {
     left: 7px;
 }
 
-@media screen and (max-width: 450px) {
+@media screen and (max-width: 550px) {
 	div.fsbanner {
 		height: 600px;
 	}

@@ -17,9 +17,9 @@ $(document).ready(function(){
 
 	jQuery.myScroll = function() {
 		$(window).scroll(function(){
-            display($('.data-space'));
-            display($('.data-analytic'));
             display($('.universe'));
+            display($('.data-analytic'));
+            display($('.data-space'));
             showMore();
         });
 	}
@@ -27,16 +27,17 @@ $(document).ready(function(){
 
     function display(dom) {
         var scrollTop = (document.body.scrollTop || document.documentElement.scrollTop) + document.documentElement.clientHeight;
-        if(scrollTop > dom.find('h2').offset().top + 100) {
-            dom.find('h2').stop().fadeIn('slow');
+        // console.log(dom.attr("class") + " " + dom.find('.word-content').css('top') + " " + scrollTop);
+        if(scrollTop > parseInt(dom.find('.word-content').css('top')) + dom.offset().top + 100) {
+            dom.find('.word-content').stop().fadeIn('slow');
         }else {
-            dom.find('h2').stop().fadeOut('fast');
+            dom.find('.word-content').stop().hide();
         }
-        if(scrollTop > dom.find('p').offset().top + 100) {
-            dom.find('p').stop().fadeIn('slow');
-        }else {
-            dom.find('p').stop().fadeOut('fast');
-        }
+        // if(scrollTop > dom.find('p').offset().top + 100) {
+        //     dom.find('p').stop().fadeIn('slow');
+        // }else {
+        //     dom.find('p').stop().fadeOut('fast');
+        // }
     }
 
     function showMore() {

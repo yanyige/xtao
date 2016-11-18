@@ -17,7 +17,10 @@ body {
 .block-center {
 	margin-left: 130px;
 	width: calc(100% - 307px);
-	font-family: "Hiragino Sans GB","Microsoft YaHei","WenQuanYi Micro Hei";
+	font-family: Helvetica, Arial, 'Hiragino Sans GB', 'Microsoft Yahei', 微软雅黑, STHeiti, 华文细黑, sans-serif;
+	opacity: 0.7;
+    font-weight: lighter;
+    letter-spacing: 3px;
 }
 
 .item-name {
