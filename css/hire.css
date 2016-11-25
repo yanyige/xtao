@@ -79,7 +79,8 @@
 .support>ul li {
 	margin-left: 30px;
 	margin: 20px 0 10px 20px;
-	font-family: "Hiragino Sans GB","Microsoft YaHei","WenQuanYi Micro Hei";
+	font-family: Helvetica, Arial, 'Hiragino Sans GB', 'Microsoft Yahei', 微软雅黑, STHeiti, 华文细黑, sans-serif;
+	font-weight: lighter;
 }
 
 .join {
@@ -106,7 +107,9 @@
 	margin: 20px auto;
 }
 
-
+.wrapper1 {
+	display: none;
+}
 
 @media screen and (max-width: 1024px) {
 	.wrapper {

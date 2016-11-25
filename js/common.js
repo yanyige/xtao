@@ -62,9 +62,21 @@ $(document).ready(function(){
          // console.log($('body').height());
         var obj = $('.header').find('img');
         obj.ready(function() {
-            var WIDTH = document.documentElement.clientWidth, HEIGHT = WIDTH > 1000?($('.header').height() || $('body').height()):($('.header').height() || $('body').height() - 400) , POINT = HEIGHT > 2000? 35:15;
+            var WIDTH = document.documentElement.clientWidth;
+            if(WIDTH > 1979) HEIGHT = 890;
+            else if(WIDTH > 1599) HEIGHT = 775;
+            else if(WIDTH > 1439) HEIGHT = 698;
+            else if(WIDTH > 1023) HEIGHT = 496;
+            else if(WIDTH > 767) HEIGHT = 372;
+            else if(WIDTH > 424) HEIGHT = 206;
+            else if(WIDTH > 374) HEIGHT = 181;
+            else if(WIDTH > 320) HEIGHT = 155;
+            else HEIGHT = 150;
+            var POINT = HEIGHT > 2000? 35:15
             // console.log($('body').height());
-            console.log(HEIGHT);
+            if(window.location.href.indexOf('index') > 0) {
+                HEIGHT = $('body').height();
+            }
             var canvas = document.getElementById('canvas');
             canvas.width = WIDTH,
             canvas.height = HEIGHT;

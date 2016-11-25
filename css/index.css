@@ -480,21 +480,21 @@ nav {
 	.data-space .word-content {
 	    max-width: 300px;
 	    top: 0;
-	    left: 10%;
+	    left: 3%;
 	}
 	.data-space .word-content h2 {
-	    font-size: 1.22rem;
+	    font-size: 1.02rem;
 	}
 	.universe {
 	    min-height: 600px;
 	}
 	.universe .word-content {
 	    max-width: 300px;
-	    left: 10%;
+	    left: 3%;
 	    top: 240px;
 	}
 	.universe .word-content h2 {
-	    font-size: 1.22rem;
+	    font-size: 1.02rem;
 	}
 	.data-analytic {
 		min-height: 800px;
@@ -503,11 +503,11 @@ nav {
 	}
 	.data-analytic .word-content {
 	    max-width: 300px;
-	    left: 10%;
+	    left: 3%;
         top: 100px;
 	}
 	.data-analytic .word-content h2 {
-	    font-size: 1.22rem;
+	    font-size: 1.02rem;
 	}
 	.logo-bot {
     	width: 80%;

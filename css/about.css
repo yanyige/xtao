@@ -8,8 +8,10 @@
 }
 
 .container h1 {
-	font-size: 40px;
 	margin: 30px 0 30px 0;
+	font-size: 30px;
+	font-weight: lighter;
+	letter-spacing: 1px;
 }
 
 .container h2 {

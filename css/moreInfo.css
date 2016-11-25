@@ -6,12 +6,16 @@
 }
 
 .container h1 {
-	font-size: 40px;
-	margin: 30px 0 50px 0;
+
+	margin: 30px 0 20px 0;
+	font-size: 30px;
+    font-weight: lighter;
+    letter-spacing: 1px;
 }
 
 .container h2 {
 	margin: 100px 0 50px 0;
+
 }
 
 .container p {
@@ -20,6 +24,7 @@
     opacity: 0.7;
     font-weight: lighter;
     text-align: justify;
+    line-height: 1.42857;
 }
 
 .ft-img {
