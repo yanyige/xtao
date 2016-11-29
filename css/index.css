@@ -449,6 +449,18 @@ nav {
     }
 }
 
+@media screen and (max-width: 700px) {
+	.universe .word-content h2 {
+	    font-size: 1.12rem;
+	}
+	.data-space .word-content h2 {
+	    font-size: 1.12rem;
+	}
+	.data-analytic .word-content h2 {
+	    font-size: 1.12rem;
+	}
+}
+
 @media screen and (max-width: 450px) {
 	.headerTitle {
 		width: 75%;

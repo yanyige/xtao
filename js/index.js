@@ -1,4 +1,27 @@
-$(document).ready(function(){
+
+// $(document).ready(function(){
+window.onload = function(){
+    function preLoad(url, fn) {
+        var img = new Image();
+        if(img.complete) {
+            fn();
+            return;
+        }
+        img.onload = function() {
+            // alert('重新加载完成');
+            img.onload = null;
+            fn();
+        };
+        img.src = url;
+
+    }
+
+    // var cloud = 'image/img-cloud-1-tiny.png';
+    // preLoad(cloud, function() {
+    //     alert(cloud);
+    //     $('.cloud').attr('src', cloud);
+    //     alert($('.cloud').attr('src'));
+    // });
 
 	jQuery.ballsMove = function() {
 		$(document).mousemove(function(ev){
@@ -90,10 +113,12 @@ $(document).ready(function(){
             $('#track').attr('data-top', 0);
             $('.data-analytic').attr('data-top', -100);
         }
-        if($('body').width() < 450) {
-            $('.ball').attr('src', '');
-            $('.spark').attr('src', '');
+        if($('body').width() < 700) {
+            $('.ball').remove();
+            $('.spark').remove();
         }
     }
+    // $('.spark').remove();
     $.fitPhone();
-});
+// });
+}

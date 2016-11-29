@@ -50,8 +50,13 @@ $(document).ready(function(){
             var scrollHeight = document.documentElement.scrollTop || document.body.scrollTop;
             var targetHeight = $('.header').find('img').height();
             var opacity = (1 - (targetHeight - scrollHeight) / targetHeight);
-            var nav = $('.nav');
-            nav.css('background-color', 'rgba(0, 0, 0, '+opacity+')');
+            opacity = opacity == 0 ? 0:1;
+            var nav = $('.sec .nav');
+            nav.css('background-color', 'rgba(33, 188, 239, '+opacity+')');
+            console.log(opacity);
+            if(opacity != 0) {
+            	nav.addClass('scrolled');
+            } else nav.removeClass('scrolled');
         });
     }
     $.navOpacity();
@@ -60,10 +65,11 @@ $(document).ready(function(){
     jQuery.sportsBall = function(){
          //定义画布宽高和生成点的个数
          // console.log($('body').height());
-        if(window.location.href.indexOf('index') < 0) {
+        var WIDTH = $(window).width();
+        // console.log()
+        if($('#xtaoindex').val() != 'index') {
 	        var obj = $('.header').find('img');
 	        obj.ready(function() {
-	            var WIDTH = document.documentElement.clientWidth;
 	            if(WIDTH > 1979) HEIGHT = 890;
 	            else if(WIDTH > 1599) HEIGHT = 775;
 	            else if(WIDTH > 1439) HEIGHT = 698;

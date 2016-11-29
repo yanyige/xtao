@@ -50,6 +50,7 @@ nav {
 	position: fixed;
 	left: 0;
 	right: 0;
+	transition: 1s;
 	z-index: 9999;
 }
 
@@ -126,6 +127,11 @@ body {
 .sec nav {
 	background-color: rgba(0, 0, 0, 0);
 	position: fixed;
+	color: #56789A;
+}
+
+.scrolled {
+	box-shadow: 0 4px 4px 0 rgba(0, 0, 0, .1);
 }
 
 .footer {
