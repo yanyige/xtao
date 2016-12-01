@@ -1,5 +1,24 @@
 $(document).ready(function(){
 
+	jQuery.fitPhone = function() {
+        console.log($('body').height());
+        if($('body').width() < 400) {
+            $('.ball').hide();
+            $('.spark').hide();
+            $('.data-analytic').attr('data-top', -200);
+        }else if($('body').width() < 700) {
+            $('.ball').remove();
+            $('.spark').remove();
+            $('.data-analytic').attr('data-top', -300);
+        }else if($('body').width() < 1025) {
+            $('#track').attr('data-top', 0);
+            $('.data-analytic').attr('data-top', -100);
+        }
+
+    }
+    // $('.spark').remove();
+    $.fitPhone();
+
     jQuery.header = function() {
         $(".nav ul li").hover(function(){
             $(this).addClass('active');
@@ -53,7 +72,6 @@ $(document).ready(function(){
             opacity = opacity == 0 ? 0:1;
             var nav = $('.sec .nav');
             nav.css('background-color', 'rgba(33, 188, 239, '+opacity+')');
-            console.log(opacity);
             if(opacity != 0) {
             	nav.addClass('scrolled');
             } else nav.removeClass('scrolled');
@@ -63,7 +81,7 @@ $(document).ready(function(){
 
 
     jQuery.sportsBall = function(){
-         //定义画布宽高和生成点的个数
+         //露篓脪氓禄颅虏录驴铆赂脽潞脥脡煤鲁脡碌茫碌脛赂枚脢媒
          // console.log($('body').height());
         var WIDTH = $(window).width();
         // console.log()
@@ -91,7 +109,7 @@ $(document).ready(function(){
 	            context.fillStyle = 'rgba(0,0,0,0.5)';
 	            var circleArr = [];
 
-	            //线条：开始xy坐标，结束xy坐标，线条透明度
+	            //脧脽脤玫拢潞驴陋脢录xy脳酶卤锚拢卢陆谩脢酶xy脳酶卤锚拢卢脧脽脤玫脥赂脙梅露脠
 	            function Line (x, y, _x, _y, o) {
 	                this.beginX = x,
 	                this.beginY = y,
@@ -99,7 +117,7 @@ $(document).ready(function(){
 	                this.closeY = _y,
 	                this.o = o;
 	            }
-	            //点：圆心xy坐标，半径，每帧移动xy的距离
+	            //碌茫拢潞脭虏脨脛xy脳酶卤锚拢卢掳毛戮露拢卢脙驴脰隆脪脝露炉xy碌脛戮脿脌毛
 	            function Circle (x, y, r, moveX, moveY) {
 	                this.x = x,
 	                this.y = y,
@@ -107,12 +125,12 @@ $(document).ready(function(){
 	                this.moveX = moveX,
 	                this.moveY = moveY;
 	            }
-	            //生成max和min之间的随机数
+	            //脡煤鲁脡max潞脥min脰庐录盲碌脛脣忙禄煤脢媒
 	            function num (max, _min) {
 	                var min = arguments[1] || 0;
 	                return Math.floor(Math.random()*(max-min+1)+min);
 	            }
-	            // 绘制原点
+	            // 禄忙脰脝脭颅碌茫
 	            function drawCricle (cxt, x, y, r, moveX, moveY) {
 	                var img = new Image();
 	                img.src = "image/icon-2.png"
@@ -125,7 +143,7 @@ $(document).ready(function(){
 	                cxt.drawImage(img, x-r*1, y-r*1, r* 2, r*2);
 	                return circle;
 	            }
-	            //绘制线条
+	            //禄忙脰脝脧脽脤玫
 	            function drawLine (cxt, x, y, _x, _y, o) {
 	                var line = new Line(x, y, _x, _y, o)
 	                cxt.beginPath()
@@ -136,7 +154,7 @@ $(document).ready(function(){
 	                cxt.stroke();
 
 	            }
-	            //初始化生成原点
+	            //鲁玫脢录禄炉脡煤鲁脡脭颅碌茫
 	            function init () {
 	                circleArr = [];
 	                for (var i = 0; i < POINT; i++) {
@@ -145,7 +163,7 @@ $(document).ready(function(){
 	                draw();
 	            }
 
-	            //每帧绘制
+	            //脙驴脰隆禄忙脰脝
 	            function draw () {
 	                context.clearRect(0,0,canvas.width, canvas.height);
 	                for (var i = 0; i < POINT; i++) {
@@ -175,7 +193,7 @@ $(document).ready(function(){
 	                }
 	            }
 
-	            //调用执行
+	            //碌梅脫脙脰麓脨脨
 	            init();
 	            setInterval(function () {
 	                for (var i = 0; i < POINT; i++) {
@@ -213,7 +231,7 @@ $(document).ready(function(){
 	            context.fillStyle = 'rgba(0,0,0,0.5)';
 	            var circleArr = [];
 
-	            //线条：开始xy坐标，结束xy坐标，线条透明度
+	            //脧脽脤玫拢潞驴陋脢录xy脳酶卤锚拢卢陆谩脢酶xy脳酶卤锚拢卢脧脽脤玫脥赂脙梅露脠
 	            function Line (x, y, _x, _y, o) {
 	                this.beginX = x,
 	                this.beginY = y,
@@ -221,7 +239,7 @@ $(document).ready(function(){
 	                this.closeY = _y,
 	                this.o = o;
 	            }
-	            //点：圆心xy坐标，半径，每帧移动xy的距离
+	            //碌茫拢潞脭虏脨脛xy脳酶卤锚拢卢掳毛戮露拢卢脙驴脰隆脪脝露炉xy碌脛戮脿脌毛
 	            function Circle (x, y, r, moveX, moveY) {
 	                this.x = x,
 	                this.y = y,
@@ -229,12 +247,12 @@ $(document).ready(function(){
 	                this.moveX = moveX,
 	                this.moveY = moveY;
 	            }
-	            //生成max和min之间的随机数
+	            //脡煤鲁脡max潞脥min脰庐录盲碌脛脣忙禄煤脢媒
 	            function num (max, _min) {
 	                var min = arguments[1] || 0;
 	                return Math.floor(Math.random()*(max-min+1)+min);
 	            }
-	            // 绘制原点
+	            // 禄忙脰脝脭颅碌茫
 	            function drawCricle (cxt, x, y, r, moveX, moveY) {
 	                var img = new Image();
 	                img.src = "image/icon-2.png"
@@ -247,7 +265,7 @@ $(document).ready(function(){
 	                cxt.drawImage(img, x-r*1, y-r*1, r* 2, r*2);
 	                return circle;
 	            }
-	            //绘制线条
+	            //禄忙脰脝脧脽脤玫
 	            function drawLine (cxt, x, y, _x, _y, o) {
 	                var line = new Line(x, y, _x, _y, o)
 	                cxt.beginPath()
@@ -258,7 +276,7 @@ $(document).ready(function(){
 	                cxt.stroke();
 
 	            }
-	            //初始化生成原点
+	            //鲁玫脢录禄炉脡煤鲁脡脭颅碌茫
 	            function init () {
 	                circleArr = [];
 	                for (var i = 0; i < POINT; i++) {
@@ -271,7 +289,7 @@ $(document).ready(function(){
 	                draw();
 	            }
 
-	            //每帧绘制
+	            //脙驴脰隆禄忙脰脝
 	            function draw () {
 	                context.clearRect(0,0,canvas.width, canvas.height);
 	                for (var i = 0; i < POINT; i++) {
@@ -327,16 +345,18 @@ $(document).ready(function(){
     	$(window).on('orientationchange', function() {
     		var orientation = screen.orientation || screen.mozOrientation || screen.msOrientation;
     		if (orientation.type === "landscape-primary") {
-				alert('好好看网页，请不要玩弄你的手机^_^');
+				alert('请勿旋转^_^');
 				window.location.reload();
 			} else if (orientation.type === "landscape-secondary") {
-				alert("好好看网页，浏览网页时请不要玩弄你的手机^_^");
+				alert("请勿旋转^_^");
 				window.location.reload();
 			} else if (orientation.type === "portrait-secondary" || orientation.type === "portrait-primary") {
-				alert("好好看网页，浏览网页时请不要玩弄你的手机^_^");
+				alert("请勿旋转^_^");
 				window.location.reload();
 			}
     	});
     }
     forbidOrientation();
+
+
 });

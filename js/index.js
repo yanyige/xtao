@@ -1,6 +1,6 @@
 
-// $(document).ready(function(){
-window.onload = function(){
+$(document).ready(function(){
+// window.onload = function(){
     function preLoad(url, fn) {
         var img = new Image();
         if(img.complete) {
@@ -108,17 +108,6 @@ window.onload = function(){
 	}
 	$.slideScroll();
 
-    jQuery.fitPhone = function() {
-        if($('body').width() < 1025) {
-            $('#track').attr('data-top', 0);
-            $('.data-analytic').attr('data-top', -100);
-        }
-        if($('body').width() < 700) {
-            $('.ball').remove();
-            $('.spark').remove();
-        }
-    }
-    // $('.spark').remove();
-    $.fitPhone();
-// });
-}
+
+});
+// }

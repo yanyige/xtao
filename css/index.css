@@ -27,13 +27,56 @@ nav {
 	vertical-align: middle;
 }
 .headerTitle {
-	width: 30%;
+	// width: 30%;
+	// left: 0px;
+	// right: 0px;
+	// margin: 0 auto;
+	// display: block;
+	// top: 230px;
+	position: absolute;
+}
+
+.headerTitleWrap {
+	position: absolute;
+	width: 34%;
 	left: 0px;
 	right: 0px;
 	margin: 0 auto;
 	display: block;
 	top: 230px;
+}
+
+.titleWord {
 	position: absolute;
+	font-size: 40px;
+	color: white;
+	font-weight: bold;
+	font-family: Helvetica, Arial, 'Hiragino Sans GB', 'Microsoft Yahei', 微软雅黑, STHeiti, 华文细黑, sans-serif;
+	letter-spacing: 2px;
+}
+
+.titleManagement {
+	top: 220px;
+	width: 240px;
+	text-align: center;
+	left: -300px;
+}
+
+.titleGene {
+    top: 220px;
+    width: 340px;
+    text-align: center;
+    left: 694px;
+}
+
+.titleStorage {
+	top: -50px;
+	left: 250px;
+}
+
+.titleAnalytic {
+	left: 200px;
+	top: 490px;
 }
 
 .headerBall {
@@ -284,7 +327,19 @@ nav {
     text-decoration: none;
 }
 
+@media screen and (max-width: 1441px) {
+	.headerTitleWrap {
+		width: 44%;
+	}
+}
+
 @media screen and (max-width: 1400px) {
+	.titleWord {
+		font-size: 32px;
+	}
+	.headerTitleWrap {
+		width: 47%;
+	}
     #main {
     	// height: 5300px;
     }
@@ -377,6 +432,31 @@ nav {
 }
 
 @media screen and (max-width: 1024px) {
+	.headerTitleWrap {
+		top: 74px;
+		left: 100px;
+		top: 200px;
+		left: 230px;
+	}
+	.titleWord {
+		font-size: 25px;
+	}
+	.titleStorage {
+		left: 80px;
+	}
+	.titleManagement {
+		top: 80px;
+	    left: -235px;
+	}
+	.titleAnalytic {
+		top: 220px;
+		left: 45px;
+	}
+	.titleGene {
+		left: 245px;
+    	top: 80px;
+    	width: 310px;
+	}
 	.headerTitle {
 		width: 65%;
 	}
@@ -388,10 +468,6 @@ nav {
 		top: 40px;
 		left: -20px;
 		width: 150%;
-	}
-	.headerTitle {
-		top: 120px;
-		left: 50px;
 	}
 	.spark {
         margin-top: -340px;
@@ -406,17 +482,18 @@ nav {
 	    min-height: 400px;
 	}
 	.data-space .word-content {
-	    max-width: 340px;
+	    max-width: 640px;
 	    top: 130px;
+	    left: 22%;
 	}
 	.data-space .word-content h2 {
 	    font-size: 1.22rem;
 	}
 	.universe {
-	    min-height: 600px;
+	    min-height: 500px;
 	}
 	.universe .word-content {
-	    max-width: 340px;
+	    max-width: 640px;
         top: 110px;
         z-index: 6;
 	}
@@ -436,9 +513,9 @@ nav {
 	    background-position-x: 43%;
 	}
 	.data-analytic .word-content {
-	    max-width: 340px;
+	    max-width: 640px;
 	    left: 30%;
-        margin: 200px 0 0;
+        top: 400px;
 	}
 	.data-analytic .word-content h2 {
 	    font-size: 1.22rem;
@@ -449,7 +526,52 @@ nav {
     }
 }
 
+@media screen and (max-width: 800px) {
+	.headerTitleWrap {
+	    top: 140px;
+	    left: 210px;
+	}
+	.titleWord {
+		font-size: 20px;
+	}
+	.titleStorage {
+		left: 63px;
+		top: -25px;
+	}
+	.titleManagement {
+		width: 200px;
+	    top: 68px;
+	    left: -190px;
+	}
+	.titleAnalytic {
+	    top: 160px;
+	    left: 28px;
+	}
+	.titleGene {
+	    left: 235px;
+	    top: 68px;
+	    width: 165px;
+	}
+}
+
 @media screen and (max-width: 700px) {
+	.headerTitleWrap {
+		left: 110px;
+	}
+	.titleStorage {
+	    left: 50px;
+	}
+	.titleManagement {
+	    top: 58px;
+	}
+	.titleGene {
+	    left: 210px;
+	    top: 58px;
+	}
+	.titleAnalytic {
+	    top: 140px;
+	    left: 16px;
+	}
 	.universe .word-content h2 {
 	    font-size: 1.12rem;
 	}
@@ -459,11 +581,60 @@ nav {
 	.data-analytic .word-content h2 {
 	    font-size: 1.12rem;
 	}
+	.universe .word-content {
+	    max-width: 340px;
+	}
+	.data-space .word-content {
+		top: 45px;
+		left: 10%;
+		max-width: 340px;
+	}
+	.data-analytic .word-content {
+	    max-width: 340px;
+	    top: 0px;
+	}
+	.data-analytic {
+		min-height: 800px;
+	}
+	.cloud {
+	    left: -100px;
+	    margin-top: -100px;
+	}
+	.universe {
+		min-height: 500px;
+	}
 }
 
 @media screen and (max-width: 450px) {
 	.headerTitle {
-		width: 75%;
+		// width: 75%;
+	}
+	.headerTitleWrap {
+	    width: 75%;
+	    left: 105px;
+	    top: 100px;
+	}
+	.titleWord {
+		font-size: 12px;
+	}
+	.titleStorage {
+		left: 53px;
+		top: -15px;
+	}
+	.titleAnalytic {
+	    top: 130px;
+	    left: 27px;
+	}
+	.titleManagement {
+		left: -108px;
+		width: 112px;
+		top: 58px;
+	}
+	.titleGene {
+	    left: 150px;
+	    top: 58px;
+	    letter-spacing: 1px;
+	    width: 150px;
 	}
 	#main {
 		min-width: 0px;
@@ -475,7 +646,7 @@ nav {
 		width: 150%;
 	}
 	.headerTitle {
-		top: 70px;
+		// top: 70px;
 	}
 	.spark {
 	    margin-top: -340px;
@@ -498,7 +669,7 @@ nav {
 	    font-size: 1.02rem;
 	}
 	.universe {
-	    min-height: 600px;
+	    min-height: 500px;
 	}
 	.universe .word-content {
 	    max-width: 300px;
@@ -509,14 +680,14 @@ nav {
 	    font-size: 1.02rem;
 	}
 	.data-analytic {
-		min-height: 800px;
+		min-height: 666px;
 	    background-size: 200%;
 	    background-position-x: 43%;
 	}
 	.data-analytic .word-content {
 	    max-width: 300px;
 	    left: 3%;
-        top: 100px;
+        top: 320px;
 	}
 	.data-analytic .word-content h2 {
 	    font-size: 1.02rem;
