@@ -334,24 +334,24 @@ nav {
 	}
 	.titleStorage {
 		left: 85px;
-		top: -35px;
+		top: -50px;
 	}
 	.titleManagement {
 	    width: 200px;
-	    left: -197px;
+	    left: -218px;
 	    top: 85px;
 	}
 	.titleGene {
-	    top: 95px;
+	    top: 85px;
 	    width: 200px;
 	    text-align: center;
-	    left: 270px;
+	    left: 292px;
 	}
 	.titleAnalytic {
 	    left: 53px;
 	    top: 220px;
 	    text-align: center;
-	    top: 205px;
+	    top: 225px;
 	}
 	.headerTitleWrap {
 		width: 35%;

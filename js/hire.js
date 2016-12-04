@@ -1,3 +1,3 @@
 $(document).ready(function() {
-	$('.fsbanner').children(':first').click();
+	// $('.fsbanner').children(':first').click();
 });
