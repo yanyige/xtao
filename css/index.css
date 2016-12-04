@@ -533,6 +533,7 @@ nav {
 	}
 	.titleWord {
 		font-size: 20px;
+		display: none;
 	}
 	.titleStorage {
 		left: 63px;
