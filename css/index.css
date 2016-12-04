@@ -327,18 +327,38 @@ nav {
     text-decoration: none;
 }
 
-@media screen and (max-width: 1441px) {
-	.headerTitleWrap {
-		width: 44%;
-	}
-}
 
 @media screen and (max-width: 1400px) {
 	.titleWord {
-		font-size: 32px;
+		font-size: 20px;
+	}
+	.titleStorage {
+		left: 85px;
+		top: -35px;
+	}
+	.titleManagement {
+	    width: 200px;
+	    left: -197px;
+	    top: 85px;
+	}
+	.titleGene {
+	    top: 95px;
+	    width: 200px;
+	    text-align: center;
+	    left: 270px;
+	}
+	.titleAnalytic {
+	    left: 53px;
+	    top: 220px;
+	    text-align: center;
+	    top: 205px;
 	}
 	.headerTitleWrap {
-		width: 47%;
+		width: 35%;
+		left: 240px;
+	}
+	.headerTitle {
+		width: 60%;
 	}
     #main {
     	// height: 5300px;
