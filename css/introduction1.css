@@ -99,37 +99,40 @@
 
 @media screen and (max-width: 450px) {
     .block {
-        width: 45%;
-        height: 250px;
+        width: 43%;
+        height: 200px;
         vertical-align: top;
     }
     .block img{
-        width: 100%;
-    }
-}
-
-@media screen and (max-width: 400px) {
-    .block {
-        width: 45%;
-        height: 230px;
-        vertical-align: top;
-    }
-    .block img{
-        width: 90%;
-        margin-top: 10px;
+        width: 78%;
     }
     .block h2 {
         font-size: 1.4em;
     }
 }
+
+@media screen and (max-width: 400px) {
+    .block {
+        width: 43%;
+        height: 200px;
+        vertical-align: top;
+    }
+    .block img{
+        width: 78%;
+        margin-top: 10px;
+    }
+    .block h2 {
+        font-size: 1.3em;
+    }
+}
 @media screen and (max-width: 350px) {
     .block {
-        width: 45%;
+        width: 43%;
         height: 190px;
         vertical-align: top;
     }
     .block img{
-        width: 90%;
+        width: 78%;
         margin-top: 10px;
     }
     .block h2 {

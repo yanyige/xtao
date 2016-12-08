@@ -75,7 +75,7 @@ nav {
 	background-color: black;
 	height: 100%;
 	position: fixed;
-	z-index: 7;
+	z-index: 20;
 	top: 0;
 	right: -300px;
     color: #ababab;

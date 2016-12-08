@@ -6,10 +6,13 @@ $(document).ready(function(){
             $('.ball').hide();
             $('.spark').hide();
             $('.data-analytic').attr('data-top', -200);
+            $('#kefu').attr('src', 'https://xtaotech.yunkefu.com/workbench/openlc/eHRhb3RlY2gueXVua2VmdS5jb20=');
         }else if($('body').width() < 700) {
             $('.ball').remove();
             $('.spark').remove();
             $('.data-analytic').attr('data-top', -300);
+            $('#kefu').attr('src', 'https://xtaotech.yunkefu.com/workbench/openlc/eHRhb3RlY2gueXVua2VmdS5jb20=');
+            console.log('?');
         }else if($('body').width() < 1025) {
             $('#track').attr('data-top', 0);
             $('.data-analytic').attr('data-top', -100);
@@ -65,8 +68,9 @@ $(document).ready(function(){
     $.toggleNav();
 
     jQuery.navOpacity = function() {
+    	var scrollHeight = document.documentElement.scrollTop || document.body.scrollTop;
         $(window).scroll(function(){
-            var scrollHeight = document.documentElement.scrollTop || document.body.scrollTop;
+            scrollHeight = document.documentElement.scrollTop || document.body.scrollTop;
             var targetHeight = $('.header').find('img').height();
             var opacity = (1 - (targetHeight - scrollHeight) / targetHeight);
             opacity = opacity == 0 ? 0:1;
@@ -76,6 +80,10 @@ $(document).ready(function(){
             	nav.addClass('scrolled');
             } else nav.removeClass('scrolled');
         });
+        if(scrollHeight) {
+        	var nav = $('.sec .nav');
+        	nav.css('background-color', 'rgba(33, 188, 239, '+1+')');
+        }
     }
     $.navOpacity();
 
@@ -195,8 +203,21 @@ $(document).ready(function(){
 
 	            //碌梅脫脙脰麓脨脨
 	            init();
-	            setInterval(function () {
-	                for (var i = 0; i < POINT; i++) {
+	            // setInterval(function () {
+	            //     for (var i = 0; i < POINT; i++) {
+	            //         var cir = circleArr[i];
+	            //         cir.x += cir.moveX;
+	            //         cir.y += cir.moveY;
+	            //         if (cir.x > WIDTH) cir.x = 0;
+	            //         else if (cir.x < 0) cir.x = WIDTH;
+	            //         if (cir.y > HEIGHT) cir.y = 0;
+	            //         else if (cir.y < 0) cir.y = HEIGHT;
+
+	            //     }
+	            //     draw();
+	            // }, 8);
+	            function foo() {
+	            	for (var i = 0; i < POINT; i++) {
 	                    var cir = circleArr[i];
 	                    cir.x += cir.moveX;
 	                    cir.y += cir.moveY;
@@ -204,10 +225,11 @@ $(document).ready(function(){
 	                    else if (cir.x < 0) cir.x = WIDTH;
 	                    if (cir.y > HEIGHT) cir.y = 0;
 	                    else if (cir.y < 0) cir.y = HEIGHT;
-
 	                }
 	                draw();
-	            }, 8);
+	                requestAnimationFrame(foo);
+	            }
+	            requestAnimationFrame(foo);
 	        });
         }else {
     		var tempTop = 0;
@@ -217,8 +239,8 @@ $(document).ready(function(){
             });
         	function drawBall(id){
 	        	var WIDTH = $(window).width();
-	            var HEIGHT = $('body').height() / 4;
-	            var POINT = 10;
+	            var HEIGHT = $(window).height();
+	            var POINT = 12;
 	            // console.log($('body').height());
 
 
@@ -319,8 +341,21 @@ $(document).ready(function(){
 	                }
 	       		}
 	       		init();
-	            setInterval(function () {
-	                for (var i = 0; i < POINT; i++) {
+	            // setInterval(function () {
+	            //     for (var i = 0; i < POINT; i++) {
+	            //         var cir = circleArr[i];
+	            //         cir.x += cir.moveX;
+	            //         cir.y += cir.moveY;
+	            //         if (cir.x > WIDTH) cir.x = 0;
+	            //         else if (cir.x < 0) cir.x = WIDTH;
+	            //         if (cir.y > HEIGHT) cir.y = 0;
+	            //         else if (cir.y < 0) cir.y = HEIGHT;
+
+	            //     }
+	            //     draw();
+	            // }, 17);
+	            function foo() {
+	            	for (var i = 0; i < POINT; i++) {
 	                    var cir = circleArr[i];
 	                    cir.x += cir.moveX;
 	                    cir.y += cir.moveY;
@@ -328,15 +363,16 @@ $(document).ready(function(){
 	                    else if (cir.x < 0) cir.x = WIDTH;
 	                    if (cir.y > HEIGHT) cir.y = 0;
 	                    else if (cir.y < 0) cir.y = HEIGHT;
-
 	                }
 	                draw();
-	            }, 8);
+	                requestAnimationFrame(foo);
+	            }
+	            requestAnimationFrame(foo);
         	}
         	drawBall('canvas1');
-        	drawBall('canvas2');
-        	drawBall('canvas3');
-        	drawBall('canvas4');
+        	// drawBall('canvas2');
+        	// drawBall('canvas3');
+        	// drawBall('canvas4');
     	}
     }
     $.sportsBall();
@@ -356,7 +392,7 @@ $(document).ready(function(){
 			}
     	});
     }
-    forbidOrientation();
+    // forbidOrientation();
 
 
 });

@@ -27,7 +27,7 @@ nav {
 	vertical-align: middle;
 }
 .headerTitle {
-	// width: 30%;
+	width: 70%;
 	// left: 0px;
 	// right: 0px;
 	// margin: 0 auto;
@@ -39,7 +39,7 @@ nav {
 .headerTitleWrap {
 	position: absolute;
 	width: 34%;
-	left: 0px;
+	left: 250px;
 	right: 0px;
 	margin: 0 auto;
 	display: block;
@@ -48,7 +48,7 @@ nav {
 
 .titleWord {
 	position: absolute;
-	font-size: 40px;
+	font-size: 30px;
 	color: white;
 	font-weight: bold;
 	font-family: Helvetica, Arial, 'Hiragino Sans GB', 'Microsoft Yahei', 微软雅黑, STHeiti, 华文细黑, sans-serif;
@@ -56,27 +56,27 @@ nav {
 }
 
 .titleManagement {
-	top: 220px;
-	width: 240px;
-	text-align: center;
-	left: -300px;
+    top: 140px;
+    width: 240px;
+    text-align: center;
+    left: -42%;
 }
 
 .titleGene {
-    top: 220px;
+    top: 130px;
     width: 340px;
     text-align: center;
-    left: 694px;
+    left: 65%;
 }
 
 .titleStorage {
 	top: -50px;
-	left: 250px;
+	left: 22%;
 }
 
 .titleAnalytic {
-	left: 200px;
-	top: 490px;
+    left: 15%;
+    top: 320px;
 }
 
 .headerBall {
@@ -102,6 +102,10 @@ nav {
 .spark {
 	// position: absolute;
 	margin-top: -100px;
+}
+
+.word-content {
+    z-index: 19;
 }
 
 .data-space {
@@ -326,14 +330,26 @@ nav {
     color: #ababab;
     text-decoration: none;
 }
+@media screen and (max-width: 1750px) {
+	.titleAnalytic {
+	    left: 13%;
+	    top: 294px;
+	}
+}
 
+@media screen and (max-width: 1650px) {
+	.titleAnalytic {
+	    left: 11%;
+	    top: 280px;
+	}
+}
 
-@media screen and (max-width: 1400px) {
+@media screen and (max-width: 1500px) {
 	.titleWord {
 		font-size: 20px;
 	}
 	.titleStorage {
-		left: 85px;
+		left: 17%;
 		top: -50px;
 	}
 	.titleManagement {
@@ -348,7 +364,7 @@ nav {
 	    left: 292px;
 	}
 	.titleAnalytic {
-	    left: 53px;
+	    left: 12%;
 	    top: 220px;
 	    text-align: center;
 	    top: 225px;
@@ -462,15 +478,15 @@ nav {
 		font-size: 25px;
 	}
 	.titleStorage {
-		left: 80px;
+		left: 14%;
 	}
 	.titleManagement {
 		top: 80px;
 	    left: -235px;
 	}
 	.titleAnalytic {
-		top: 220px;
-		left: 45px;
+		top: 180px;
+		left: 5%;
 	}
 	.titleGene {
 		left: 245px;
@@ -546,6 +562,12 @@ nav {
     }
 }
 
+@media screen and (max-width: 970px) {
+	.titleWord {
+		display: none;
+	}
+}
+
 @media screen and (max-width: 800px) {
 	.headerTitleWrap {
 	    top: 140px;
@@ -553,7 +575,6 @@ nav {
 	}
 	.titleWord {
 		font-size: 20px;
-		display: none;
 	}
 	.titleStorage {
 		left: 63px;
