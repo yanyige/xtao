@@ -1,5 +1,11 @@
 $(document).ready(function(){
 
+	$('.nav-wrapper').find('li').click(function(event){
+		// event.stopPropagation();
+		// console.log($(this).children().eq(0).attr('href'));
+		location.href = $(this).children().eq(0).attr('href');
+	});
+
 	jQuery.fitPhone = function() {
         console.log($('body').height());
         if($('body').width() < 400) {
@@ -140,15 +146,15 @@ $(document).ready(function(){
 	            }
 	            // 禄忙脰脝脭颅碌茫
 	            function drawCricle (cxt, x, y, r, moveX, moveY) {
-	                var img = new Image();
-	                img.src = "image/icon-2.png"
+	                // var img = new Image();
+	                // img.src = "image/icon-2.png"
 	                var circle = new Circle(x, y, r, moveX, moveY)
 	                cxt.beginPath()
-	                // context.fillStyle = 'rgba(36,240,255,0.3)';
-	                // cxt.arc(circle.x, circle.y, circle.r, 0, 2*Math.PI)
-	                // cxt.closePath()
-	                // cxt.fill();
-	                cxt.drawImage(img, x-r*1, y-r*1, r* 2, r*2);
+	                context.fillStyle = 'rgba(36,240,255,0.3)';
+	                cxt.arc(circle.x, circle.y, circle.r, 0, 2*Math.PI)
+	                cxt.closePath()
+	                cxt.fill();
+	                // cxt.drawImage(img, x-r*1, y-r*1, r* 2, r*2);
 	                return circle;
 	            }
 	            //禄忙脰脝脧脽脤玫
@@ -276,15 +282,15 @@ $(document).ready(function(){
 	            }
 	            // 禄忙脰脝脭颅碌茫
 	            function drawCricle (cxt, x, y, r, moveX, moveY) {
-	                var img = new Image();
-	                img.src = "image/icon-2.png"
+	                // var img = new Image();
+	                // img.src = "image/icon-2.png"
 	                var circle = new Circle(x, y, r, moveX, moveY)
 	                cxt.beginPath()
-	                // context.fillStyle = 'rgba(36,240,255,0.3)';
-	                // cxt.arc(circle.x, circle.y, circle.r, 0, 2*Math.PI)
-	                // cxt.closePath()
-	                // cxt.fill();
-	                cxt.drawImage(img, x-r*1, y-r*1, r* 2, r*2);
+	                context.fillStyle = 'rgba(36,240,255,0.3)';
+	                cxt.arc(circle.x, circle.y, circle.r, 0, 2*Math.PI)
+	                cxt.closePath()
+	                cxt.fill();
+	                // cxt.drawImage(img, x-r*1, y-r*1, r* 2, r*2);
 	                return circle;
 	            }
 	            //禄忙脰脝脧脽脤玫

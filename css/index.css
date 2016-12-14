@@ -43,7 +43,7 @@ nav {
 	right: 0px;
 	margin: 0 auto;
 	display: block;
-	top: 230px;
+	top: 290px;
 }
 
 .titleWord {
@@ -59,24 +59,24 @@ nav {
     top: 140px;
     width: 240px;
     text-align: center;
-    left: -42%;
+    left: -58%;
 }
 
 .titleGene {
     top: 130px;
     width: 340px;
     text-align: center;
-    left: 65%;
+    left: 80%;
 }
 
 .titleStorage {
-	top: -50px;
+	top: -100px;
 	left: 22%;
 }
 
 .titleAnalytic {
     left: 15%;
-    top: 320px;
+    top: 380px;
 }
 
 .headerBall {
@@ -333,14 +333,17 @@ nav {
 @media screen and (max-width: 1750px) {
 	.titleAnalytic {
 	    left: 13%;
-	    top: 294px;
+	    top: 350px;
 	}
 }
 
 @media screen and (max-width: 1650px) {
 	.titleAnalytic {
 	    left: 11%;
-	    top: 280px;
+	    top: 325px;
+	}
+	.titleStorage {
+	    left: 20%;
 	}
 }
 
@@ -349,25 +352,24 @@ nav {
 		font-size: 20px;
 	}
 	.titleStorage {
-		left: 17%;
-		top: -50px;
+		left: 18%;
+		top: -75px;
 	}
 	.titleManagement {
 	    width: 200px;
-	    left: -218px;
+	    left: -55%;
 	    top: 85px;
 	}
 	.titleGene {
 	    top: 85px;
 	    width: 200px;
 	    text-align: center;
-	    left: 292px;
+	    left: 76%;
 	}
 	.titleAnalytic {
 	    left: 12%;
-	    top: 220px;
 	    text-align: center;
-	    top: 225px;
+	    top: 255px;
 	}
 	.headerTitleWrap {
 		width: 35%;
@@ -464,6 +466,21 @@ nav {
 	}
 	.logo-bot {
 		margin: -50px auto 0;
+	}
+}
+
+@media screen and (max-width: 1280px) {
+	.titleStorage {
+	    left: 17%;
+	}
+	.titleManagement {
+	    top: 75px;
+	}
+	.titleGene {
+	    top: 75px;
+	}
+	.titleAnalytic {
+	    top: 248px;
 	}
 }
 

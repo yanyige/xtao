@@ -77,10 +77,12 @@
 }
 
 .support>ul li {
-	margin-left: 30px;
+	// margin-left: 30px;
 	margin: 20px 0 10px 20px;
 	font-family: Helvetica, Arial, 'Hiragino Sans GB', 'Microsoft Yahei', 微软雅黑, STHeiti, 华文细黑, sans-serif;
 	font-weight: lighter;
+	text-align: center;
+	list-style: none;
 }
 
 .join {
@@ -121,5 +123,7 @@
 	}
 	.support {
 		width: 100%;
+		margin: 0;
+		padding: 0;
 	}
 }

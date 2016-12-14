@@ -43,6 +43,7 @@ body {
 
 .item {
 	padding: 30px 8% 30px 8%;
+	text-align: justify;
 }
 
 @media screen and (max-width: 450px) {
