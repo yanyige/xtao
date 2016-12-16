@@ -31,10 +31,11 @@
 
 .block h2 {
     font-family: Helvetica, Arial, 'Hiragino Sans GB', 'Microsoft Yahei', 微软雅黑, STHeiti, 华文细黑, sans-serif;
-    width: 80%;
+    // width: 80%;
     margin: 10px auto;
     opacity: 0.7;
     font-weight: lighter;
+    position: relative;
 }
 
 .block p {
