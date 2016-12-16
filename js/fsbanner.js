@@ -2,7 +2,7 @@ var fsBanner = function(container,options) {
 	var self = this;
 
 	var defaults = {
-		'showName':true,	
+		'showName':true,
 		'toUpdate':{},
 		'whenEmpty':{},
 		'trigger':'click',
@@ -21,16 +21,16 @@ var fsBanner = function(container,options) {
 		if (!this.container.width()) this.container.width(this.container.parent().width());
 
 		this.part = this.container.width() / this.items.length;
-		this.mini = this.part/4;
+		this.mini = parseInt(this.part/4+2);
 		this.widmain = this.container.width() - (this.mini*this.items.length-1);
 
-		this.items.css({'height':this.container.height(),'width':this.widmain+this.mini});	
+		this.items.css({'height':this.container.height(),'width':this.widmain+this.mini});
 
 		if (!this.options.showName) this.items.find('.name').hide();
 
 		this.items.each(function(i) {
 			var $item = $(this);
-			$item.css({'z-index':i});
+			// $item.css({'z-index':i});
 			if (self.options.trigger == 'click') $item.on('click',function() { self.selectItem($item,i); });
 			if (self.options.trigger == 'mouse') $item.on('mouseenter',function() { self.selectItem($item,i,true); });
 		});
@@ -62,10 +62,10 @@ var fsBanner = function(container,options) {
 
 		if (forceClick) this.ilast = null;
 		if (iexpanded == this.ilast) {
-			this.$expanded = null;			
+			this.$expanded = null;
 			this.resetcss();
 		} else {
-			this.$expanded = $expanded;			
+			this.$expanded = $expanded;
 			this.items.each(function(i) {
 				var $item = $(this);
 				if (i <= iexpanded) {
@@ -75,7 +75,7 @@ var fsBanner = function(container,options) {
 				}
 				if (self.options.showName) {
 					var $name = $item.find('.name');
-					var method = (i == iexpanded) ? 'removeClass' : 'addClass';				
+					var method = (i == iexpanded) ? 'removeClass' : 'addClass';
 					if (method == 'addClass' && $name.hasClass('minimized')) method = '';
 					if (method) $name.hide()[method]('minimized').fadeIn('fast');
 				}

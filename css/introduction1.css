@@ -14,7 +14,7 @@
 	width: 24%;
 	display: inline-block;
 	transition:all 0.3s linear;
-	background:#70dbff;
+	// background:#70dbff;
 	margin-bottom: 20px;
 	cursor: pointer;
 	color: #303030;
@@ -43,9 +43,12 @@
     margin: 20px auto;
 }
 
+.ft-img {
+    text-align: center;
+}
 .ft-img img{
 	vertical-align: middle;
-	width: 100%;
+	width: 80%;
 }
 
 .swiper-pagination {

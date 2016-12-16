@@ -129,6 +129,7 @@ body {
 	background-color: rgba(0, 0, 0, 0);
 	position: fixed;
 	color: #56789A;
+	padding: 8px 0;
 }
 
 .scrolled {
@@ -207,6 +208,7 @@ body {
 	margin: 0 auto;
 	color: white;
 	font-family: Microsoft YaHei;
+	text-align: center;
 }
 
 .footer-container p {
