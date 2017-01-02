@@ -81,6 +81,7 @@ $(document).ready(function(){
             var opacity = (1 - (targetHeight - scrollHeight) / targetHeight);
             opacity = opacity == 0 ? 0:1;
             var nav = $('.sec .nav');
+            // nav.css('background-color', 'rgba(33, 188, 239, '+opacity+')');
             nav.css('background-color', 'rgba(33, 188, 239, '+opacity+')');
             if(opacity != 0) {
             	nav.addClass('scrolled');
@@ -88,6 +89,7 @@ $(document).ready(function(){
         });
         if(scrollHeight) {
         	var nav = $('.sec .nav');
+        	// nav.css('background-color', 'rgba(33, 188, 239, '+1+')');
         	nav.css('background-color', 'rgba(33, 188, 239, '+1+')');
         }
     }

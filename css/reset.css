@@ -218,6 +218,7 @@ body {
 .sec>.header {
 	overflow: hidden;
 	max-height: 890px;
+	position: relative;
 }
 
 .sec>.header>img {
@@ -225,18 +226,18 @@ body {
 }
 @font-face {
       font-family: HelveticaNeue-UltLt;
-      src: url('HelveticaNeueLTPro-UltLtIt.otf');
+      src: url('EuropeUnderground_light.ttf');
     }
 
 .header-plug {
-    top: 60%;
+    top: 90%;
 }
 
 .header-plug p{
 	color: white;
-    font-size: 5rem;
+    font-size: 6rem;
     font-family: "HelveticaNeue-UltLt", sans-serif;
-    margin-left: 32%;
+    margin-left: 10%;
 }
 .header-plug .accent-line {
     position: absolute;
@@ -244,22 +245,22 @@ body {
     top: 50%;
     left: 0;
     width: 1px;
-    height: 250px;
+    height: 150px;
     background-color: #0ad8ff;
-    margin-top: 20px;
-    margin-left: 30%;
-    transform: translateY(-50%) rotate(-21deg);
+    margin-top: 10px;
+    margin-left: 6%;
+    transform: translateY(-50%) rotate(-90deg);
 }
 
 @media screen and (max-width: 1450px) {
 	.header-plug {
-	    top: 60%;
+	    top: 92%;
 	}
 }
 
 @media screen and (max-width: 1400px) {
 	.header-plug {
-	    top: 50%;
+	    top: 90%;
 	}
     nav li a {
     	font-size: 16px;
@@ -270,13 +271,30 @@ body {
 	.header-plug p{
 	    font-size: 4rem;
 	}
+	.header-plug .accent-line {
+		height: 100px;
+	｝
+}
+
+@media screen and (max-width: 1300px) {
+	.header-plug {
+	    top: 90%;
+	}
+	.header-plug p{
+		margin-left: 12%;
+	}
+	.header-plug .accent-line {
+		margin-left: 8%;
+		height: 100px;
+	}
 }
 @media screen and (max-width: 1024px) {
 	.header-plug .accent-line {
-		height: 150px;
+		height: 80px;
+		margin-top: 10px;
 	}
 	.header-plug {
-	    top: 40%;
+	    top: 90%;
 	}
 	.header-plug p{
 	    font-size: 3rem;
@@ -306,22 +324,21 @@ body {
 @media screen and (max-width: 600px) {
 	.header-plug p{
 	    font-size: 2rem;
-	    margin-left: 32%;
 	}
 	.header-plug {
-	    top: 25%;
+	    top: 90%;
 	}
 	.header-plug .accent-line {
-		height: 100px;
+		height: 60px;
 	}
 }
 @media screen and (max-width: 450px) {
 	.header-plug {
-	    top: 20%;
+	    top: 92%;
 	}
 	.header-plug p{
 	    font-size: 1.5rem;
-	    margin-left: 32%;
+	    // margin-left: 32%;
 	    // margin-top: 80px;
 	}
 	.header-plug .accent-line {

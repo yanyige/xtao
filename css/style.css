@@ -18,44 +18,66 @@
 	overflow:hidden;
 }
 .va-slice-1{
-	background:rgb(254, 133, 113);;
+	// background:rgb(254, 133, 113);
+	background:rgb(33, 188, 239);
+	border: 1px solid white;
 }
 .va-slice-2{
-	background:rgb(252, 157, 154);
+	// background:rgb(252, 157, 154);
+	background:rgb(33, 188, 239);
+	border: 1px solid white;
 }
 .va-slice-3{
-	background:rgb(249, 205, 173);
+	// background:rgb(249, 205, 173);
+	background:rgb(33, 188, 239);
+	border: 1px solid white;
 }
 .va-slice-4{
-	background:rgb(200, 200, 169);
+	// background:rgb(200, 200, 169);
+	background:rgb(33, 188, 239);
+	border: 1px solid white;
 }
 .va-slice-5{
-	background:rgb(131, 175, 155);
+	// background:rgb(131, 175, 155);
+	background:rgb(33, 188, 239);
+	border: 1px solid white;
 }
 .va-slice-6{
-	background:pink;
+	// background:pink;
+	background:rgb(33, 188, 239);
+	border: 1px solid white;
 }
 
 .va-slice-color-1{
-	background-color:#97c5eb;
+	// background-color:#97c5eb;
+	background: rgb(33, 188, 239);
 }
 .va-slice-color-2{
-	background-color:#68ace5;
+	// background-color:#68ace5;
+	background: rgb(33, 188, 239);
 }
 .va-slice-color-3{
-	background-color:#0072cf;
+	// background-color:#0072cf;
+	background: rgb(33, 188, 239);
 }
 .va-slice-color-4{
-	background-color:#0039a6;
+	// background-color:#0039a6;
+	background: rgb(33, 188, 239);
 }
 .va-slice-color-5{
-	background-color:#00338e;
+	// background-color:#00338e;
+	background: rgb(33, 188, 239);
 }
 .va-slice-color-6{
-	background-color:#002c76;
+	// background-color:#002c76;
+	background: rgb(33, 188, 239);
 }
 .va-slice-color-7{
-	background-color:#002144;
+	// background-color:#002144;
+	background: rgb(33, 188, 239);
+}
+.va-content {
+	background: white;
 }
 .va-title{
 	font-family: Helvetica, Arial, 'Hiragino Sans GB', 'Microsoft Yahei', Î¢ÈíÑÅºÚ, STHeiti, »ªÎÄÏ¸ºÚ, sans-serif;
