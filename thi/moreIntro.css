@@ -23,6 +23,10 @@ body {
     letter-spacing: 3px;
 }
 
+.block-center p {
+	text-align: justify;
+}
+
 .item-name {
 	color: #0ad8ff;
 	font-size: 2rem;

@@ -19,8 +19,8 @@
 }
 
 .container p {
-	text-align: left;
 	margin: 30px 0;
+	text-align: justify;
 }
 
 .ft-img {
